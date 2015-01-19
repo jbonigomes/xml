@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE products SYSTEM "products.dtd">
+<products>
+	<product id="12344"> 
+		<name>Orange SPV</name>
+		<description>Orange WAP phone</description>
+		<price>	
+			<currency>£</currency>
+			<amount>123.23</amount>
+		</price>
+		<contract min="3" max="12" durationtype="month">
+			<option>Lost and stolen insurance</option>
+			<option>Free replacement if damaged</option>
+		</contract>
+	</product>
+	<product id="125674">
+		<name>Sony Ericsson</name>
+		<description>Walkman</description>
+		<price>
+			<currency>£</currency>
+			<amount>199.00</amount>
+		</price>
+	</product>
+</products>

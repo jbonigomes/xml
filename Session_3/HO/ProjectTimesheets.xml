@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timesheets>
+	<employee id="234456" ismanager="false" hiredate="12/01/2003">
+		<firstname>Julie</firstname>
+		<surname>Smith</surname>
+	</employee>
+	<projects>
+		<project code="TSK2367">
+			<task>
+				<description>Create project plan for MIJ website</description>
+				<duration type="days">
+					<planned>2</planned>
+					<actual>1</actual>
+				</duration>
+			</task>
+			<task>
+				<description>Draft the conceptual web site navigation for MIJ</description>
+				<duration type="hours">
+					<planned>3</planned>
+					<actual>2</actual>
+				</duration>
+			</task>
+		</project>
+	</projects>
+</timesheets>

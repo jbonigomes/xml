@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE summarymessage SYSTEM "WarningMessages.dtd">
+<summarymessage>You have entered invalid values in the fields below: <warningmessage>Start date must
+        be greater than 31-Jan- 2006</warningmessage>
+    <warningmessage>End date must be less or equal to 31-Jan-2007 </warningmessage>
+</summarymessage>

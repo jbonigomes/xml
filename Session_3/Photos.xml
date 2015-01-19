@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE photos SYSTEM "Photos.dtd">
+<photos>
+    <photoItem ref="logo" folder="images" type="jpg">
+        <title>Logo</title>
+        <text>
+            <p>My company logo image</p>
+        </text>
+        <captions>
+            <caption>Company Logo</caption>
+        </captions>
+    </photoItem>
+</photos>

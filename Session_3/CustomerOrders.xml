@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE customerorder SYSTEM "customerorders.dtd">
+<customerorder>
+    <companyname>Despatch International Ltd</companyname>
+    <mailingaddress>
+        <addressline>1265 Manor Street</addressline>
+        <addressline>Berkley, CA 94710</addressline>
+        <direction>Take right turning at Hollow Way</direction>
+        <direction>Turn left at notting hill junction</direction>
+    </mailingaddress>
+    <orderitem>XML How To Program Deitel</orderitem>
+    <orderitem>CD Album Blue 2004</orderitem>
+</customerorder>
+

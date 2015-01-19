@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT customerorder (companyname, mailingaddress, billingaddress?, orderitem+)>
+<!ELEMENT mailingaddress (addressline+, direction*)>
+<!ELEMENT billingaddress (addressline)>
+<!ELEMENT companyname (#PCDATA)>
+<!ELEMENT addressline (#PCDATA)>
+<!ELEMENT direction (#PCDATA)>
+<!ELEMENT orderitem (#PCDATA)>

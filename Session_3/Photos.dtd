@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT photos (photoItem*)>
+<!ELEMENT photoItem (title, text?, captions)>
+<!ATTLIST photoItem
+	ref ID #REQUIRED
+	folder NMTOKEN #REQUIRED
+	type (jpg | gif | png) "jpg"
+>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT text (p+ | ul*)*>
+<!ELEMENT p (#PCDATA)*>
+<!ELEMENT captions (caption+)>
+<!ELEMENT caption (#PCDATA)>
+<!ELEMENT ul (#PCDATA)>
+
