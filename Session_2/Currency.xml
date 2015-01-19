@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<money>
+    <currency>
+        <code>USD</code>
+        <exchangerate>1.77659</exchangerate>
+        <description>US Dollars</description>
+    </currency>
+    <currency>
+        <code>EUR</code>
+        <exchangerate>1.47045</exchangerate>
+        <description>Euro</description>
+    </currency>
+</money>

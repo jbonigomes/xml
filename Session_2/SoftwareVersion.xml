@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<software>
+    <!-- The license attribute indicates the number of Client licenses -->
+    <cd id="WinXP" license="3">Microsoft Windows XP</cd>
+    <cd id="Office2003" license="5">Microsoft Office 2003</cd>
+    <cd id="XmlSpy" license="1">Altova XMLSpy 2006</cd>
+</software>

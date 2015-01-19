@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<currencyforecast title="Currency Forecast" year="2005">
+    <index id="EUR/USD">
+        <month id="January">
+            <exchangerate>1.2500</exchangerate>
+        </month>
+        <month id="March">
+            <exchangerate>1.2500</exchangerate>
+        </month>
+        <month id="December">
+            <exchangerate>1.2600</exchangerate>
+        </month>
+    </index>
+</currencyforecast>
+
