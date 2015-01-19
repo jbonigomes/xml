@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+    <card title="Welcome to my WML page">
+        <p>
+        	This is my holiday movie page <br/> Click on the link below <br/> to play my 3gpp holiday movie.
+        </p>
+        <p>
+            <a href="rtsp://my-wml-website/my-holiday-movie.3gp"> Play my holiday</a>
+        </p>
+    </card>
+</wml>

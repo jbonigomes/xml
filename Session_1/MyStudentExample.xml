@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student>
+    <firstname>John</firstname>
+    <surname>Smith</surname>
+    <birthday>
+        <day>06</day>
+        <month>12</month>
+        <year>1975</year>
+    </birthday>
+</student>

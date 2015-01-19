@@ -1,0 +1,16 @@
+<!-- This could be used in a webpage to make a calendar -->
+<?xml version="1.0" encoding="UTF-8" ?>
+<year>
+	<month>January</month>
+	<month>February</month>
+	<month>March</month>
+	<month>April</month>
+	<month>May</month>
+	<month>June</month>
+	<month>July</month>
+	<month>August</month>
+	<month>September</month>
+	<month>October</month>
+	<month>November</month>
+	<month>December</month>
+</year>

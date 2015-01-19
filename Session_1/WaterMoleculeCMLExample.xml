@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cml>
+    <mol title="Water">
+        <atoms>
+            <array builtin="elsym">H O H</array>
+        </atoms>
+        <bonds>
+            <array builtin="atid1">1 2</array>
+            <array builtin="atid2">2 3</array>
+            <array builtin="order">1 1</array>
+        </bonds>
+    </mol>
+</cml>
