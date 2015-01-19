@@ -21,4 +21,23 @@
 			<amount>199.00</amount>
 		</price>
 	</product>
+	<product id="123444">
+		<name>Apple Macbook Air</name>
+		<description>Notebook</description>
+		<price>
+			<currency>£</currency>
+			<amount>800.00</amount>
+		</price>
+		<contract min="3" max="12" durationtype="month">
+			<option>Free replacement if damaged</option>
+		</contract>
+	</product>
+	<product id="123555">
+		<name>Apple Macbook Pro</name>
+		<description>Notebook</description>
+		<price>
+			<currency>£</currency>
+			<amount>1000.00</amount>
+		</price>
+	</product>
 </products>

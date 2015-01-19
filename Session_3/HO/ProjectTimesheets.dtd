@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!ELEMENT timesheets (employee, projects+)>
+	<!ELEMENT employee (firstname, surname)>
+	<!ATTLIST employee
+		id ID #REQUIRED
+		ismanager (true | false) "false"
+		hiredate CDATA #REQUIRED
+	>
+	<!ELEMENT firstname (#PCDATA)>
+	<!ELEMENT surname (#PCDATA)>
+	<!ELEMENT projects (project+)>
+	<!ELEMENT project (task+)>
+	<!ATTLIST project code ID #REQUIRED>
+	<!ELEMENT task (description, duration)>
+	<!ELEMENT description (#PCDATA)>
+	<!ELEMENT duration (planned, actual)>
+	<!ATTLIST duration type (days | hours) "hours">
+	<!ELEMENT planned (#PCDATA)>
+	<!ELEMENT actual (#PCDATA)>

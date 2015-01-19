@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!ELEMENT products (product*)>
+	<!ELEMENT product (name | description | price | contract?)>
+	<!ATTLIST photoItem id ID #REQUIRED>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT description (#PCDATA)>
+	<!ELEMENT price (currency | amount)>
+	<!ELEMENT currency (£ | € | $) "£">
+	<!ELEMENT amount (#PCDATA)>
+	<!ELEMENT contract (option*)>
+	<!ATTLIST photoItem
+		min CDATA #REQUIRED
+		max CDATA #REQUIRED
+		durationtype (day | week | month | year) "day"
+	>
+	<!ELEMENT option (#PCDATA)>

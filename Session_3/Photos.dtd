@@ -12,4 +12,3 @@
 <!ELEMENT captions (caption+)>
 <!ELEMENT caption (#PCDATA)>
 <!ELEMENT ul (#PCDATA)>
-
