@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+	<message id="1">
+		<to firstname="Jose" surname="Gomes">
+			Jose
+		</to>
+		<from firstname="Elvis" surname="Presley">
+			Elvis
+		</from>
+		<subject>
+			Message 1
+		</subject>
+		<text>
+			Content of message 1
+		</text>
+	</message>
+
+	<message id="2">
+		<to firstname="Jose" surname="Gomes">
+			Jose
+		</to>
+		<from firstname="Elvis" surname="Presley">
+			Elvis
+		</from>
+		<subject>
+			Message 2
+		</subject>
+		<text>
+			Content of message 2
+		</text>
+	</message>
+
+	<message id="3">
+		<to firstname="Jose" surname="Gomes">
+			Jose
+		</to>
+		<from firstname="Elvis" surname="Presley">
+			Elvis
+		</from>
+		<subject>
+			Message 3
+		</subject>
+		<text>
+			Content of message 3
+		</text>
+	</message>
+</messages>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<securityaccess>
+	<user>
+		<firstname>Jose</firstname>
+		<surname>Gomes</surname>
+		<applicationname access="granted">
+			Sublime Text 3
+		</applicationname>
+		<applicationname access="granted">
+			Chrome
+		</applicationname>
+		<applicationname access="granted">
+			Sketch 3
+		</applicationname>
+		<datecreated>
+			<day>1</day>
+			<month>Jan</month>
+			<year>2015</year>
+		</datecreated>
+	</user>
+
+	<user>
+		<firstname>Elvis</firstname>
+		<surname>Presley</surname>
+		<applicationname access="granted">
+			Sublime Text 3
+		</applicationname>
+		<applicationname access="granted">
+			Chrome
+		</applicationname>
+		<applicationname access="denied">
+			Sketch 3
+		</applicationname>
+		<datecreated>
+			<day>1</day>
+			<month>Jan</month>
+			<year>2015</year>
+		</datecreated>
+	</user>
+
+	<user>
+		<firstname>Alan</firstname>
+		<surname>Turing</surname>
+		<applicationname access="granted">
+			Sublime Text 3
+		</applicationname>
+		<applicationname access="denied">
+			Chrome
+		</applicationname>
+		<applicationname access="denied">
+			Sketch 3
+		</applicationname>
+		<datecreated>
+			<day>1</day>
+			<month>Jan</month>
+			<year>2015</year>
+		</datecreated>
+	</user>	
+</securityaccess>

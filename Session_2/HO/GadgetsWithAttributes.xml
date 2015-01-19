@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gadgets>
+	<gadget
+		name="Seagull Snorkel Suit"
+		featuredin="Goldfinger (1964)">
+	</gadget>
+
+	<gadget
+		name="Grappling Hook Gun"
+		featuredin="Goldfinger (1964)">
+	</gadget>
+
+	<gadget
+		name="Oddjob’s Bowler Hat"
+		featuredin="Goldfinger (1964)">
+	</gadget>
+
+	<gadget
+		name="Goldfinger’s Laser"
+		featuredin="Goldfinger (1964)">
+	</gadget>
+
+	<gadget
+		name="Gold Plated James Bond Aston Martin Gift Set"
+		featuredin="Thunderball (1965)">
+	</gadget>
+
+	<gadget
+		name="BMW Z8">
+	</gadget>
+</gadgets>

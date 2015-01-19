@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gadgets>
+	<gadget>
+		<name>
+			Seagull Snorkel Suit
+		</name>
+		<featuredin>
+			Goldfinger (1964)
+		</featuredin>
+	</gadget>
+
+	<gadget>
+		<name>
+			Grappling Hook Gun
+		</name>
+		<featuredin>
+			Goldfinger (1964)
+		</featuredin>
+	</gadget>
+
+	<gadget>
+		<name>
+			Oddjob’s Bowler Hat
+		</name>
+		<featuredin>
+			Goldfinger (1964)
+		</featuredin>
+	</gadget>
+
+	<gadget>
+		<name>
+			Goldfinger’s Laser
+		</name>
+		<featuredin>
+			Goldfinger (1964)
+		</featuredin>
+	</gadget>
+
+	<gadget>
+		<name>
+			Gold Plated James Bond Aston Martin Gift Set
+		</name>
+		<featuredin>
+			Thunderball (1965)
+		</featuredin>
+	</gadget>
+
+	<gadget>
+		<name>
+			BMW Z8
+		</name>
+		<featuredin>
+			The World Is Not Enough (1999)
+		</featuredin>
+	</gadget>
+</gadgets>
