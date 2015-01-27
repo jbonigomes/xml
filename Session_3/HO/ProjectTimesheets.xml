@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE products SYSTEM "ProjectTimesheets.dtd">
+
+<!-- <!DOCTYPE timesheets [
+
+]> -->
+
 <timesheets>
-	<employee id="234456" ismanager="false" hiredate="12/01/2003">
+	<employee id="A234456" ismanager="false" hiredate="12/01/2003">
 		<firstname>Julie</firstname>
 		<surname>Smith</surname>
 	</employee>

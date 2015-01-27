@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.dcs.bbk.ac.uk/~dionisis/ns/employee" xmlns="http://www.dcs.bbk.ac.uk/~dionisis/ns/employee">
+    <xs:element name="employee">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice>
+                    <xs:element ref="person" />
+                    <xs:element ref="company" />
+                </xs:choice>
+            </xs:sequence>
+            <xs:attribute name="type" type="xs:string" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="person">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="firstname" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="middlename" minOccurs="0" maxOccurs="unbounded" />
+                <xs:element ref="surname" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="company">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="company_name"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="firstname" type="xs:string" />
+    <xs:element name="surname" type="xs:string" />
+    <xs:element name="middlename" type="xs:string" />
+    <xs:element name="company_name" type="xs:string" />
+</xs:schema>

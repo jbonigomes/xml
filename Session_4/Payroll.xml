@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE payroll [
+<!ENTITY % employeedtd SYSTEM "Employee.dtd">
+%employeedtd;	 
+<!ELEMENT payroll (employee, salary, mailingaddress)>
+<!ELEMENT salary (#PCDATA)>
+<!ELEMENT mailingaddress (employee, address)>
+<!ELEMENT address (#PCDATA)>
+]>
+<payroll>
+    <employee>
+        <firstname>Mark</firstname>
+        <surname>Collins</surname>
+    </employee>
+    <salary>£35,000.00</salary>
+    <mailingaddress>
+        <employee>
+            <firstname>Mark</firstname>
+            <surname>Collins</surname>
+        </employee>
+        <address>34, Narrow Lane, SE3 6DY, London</address>
+    </mailingaddress>
+</payroll>

@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE products SYSTEM "products.dtd">
+
+<!DOCTYPE products SYSTEM "Products.dtd">
+
+<!-- <!DOCTYPE products [
+
+]> -->
+
 <products>
-	<product id="12344"> 
+	<product id="A12344"> 
 		<name>Orange SPV</name>
 		<description>Orange WAP phone</description>
 		<price>	
-			<currency>£</currency>
+			<currency>pound</currency>
 			<amount>123.23</amount>
 		</price>
 		<contract min="3" max="12" durationtype="month">
@@ -13,30 +19,30 @@
 			<option>Free replacement if damaged</option>
 		</contract>
 	</product>
-	<product id="125674">
+	<product id="A125674">
 		<name>Sony Ericsson</name>
 		<description>Walkman</description>
 		<price>
-			<currency>£</currency>
+			<currency>pound</currency>
 			<amount>199.00</amount>
 		</price>
 	</product>
-	<product id="123444">
+	<product id="A123444">
 		<name>Apple Macbook Air</name>
 		<description>Notebook</description>
 		<price>
-			<currency>£</currency>
+			<currency>pound</currency>
 			<amount>800.00</amount>
 		</price>
 		<contract min="3" max="12" durationtype="month">
 			<option>Free replacement if damaged</option>
 		</contract>
 	</product>
-	<product id="123555">
+	<product id="A123555">
 		<name>Apple Macbook Pro</name>
 		<description>Notebook</description>
 		<price>
-			<currency>£</currency>
+			<currency>pound</currency>
 			<amount>1000.00</amount>
 		</price>
 	</product>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="MacRoman"?>
+<competitionEntry xmlns:M="http://www.dcs.bbk.ac.uk/itapps/xml/Music">
+    <competition>Piano</competition>
+    <competitor>J Smith</competitor>
+    <score>57</score>
+    <M:composer>George Gershwin</M:composer>
+    <M:composition>Rhapsody in Blue</M:composition>
+    <M:score>Ferde Grofe</M:score>
+</competitionEntry>	
+
