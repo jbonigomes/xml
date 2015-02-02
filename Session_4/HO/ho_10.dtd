@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!ELEMENT invoice (from, to, details)>
+  <!ATTLIST invoice xmlns CDATA #REQUIRED>
+
+  <!ENTITY dollar "#x0024">
+  <!ENTITY pound "#x00A3">
+  <!ENTITY euro "#x20AC">
+
+  <!ELEMENT from (from:company, from:reference, from:clientid, from:date, from:name, from:phone)>
+  <!ATTLIST from xmlns:from CDATA #REQUIRED>
+  <!ELEMENT from:company (#PCDATA)>
+  <!ELEMENT from:reference (#PCDATA)>
+  <!ELEMENT from:clientid (#PCDATA)>
+  <!ELEMENT from:date (#PCDATA)>
+  <!ELEMENT from:name (#PCDATA)>
+  <!ELEMENT from:phone (#PCDATA)>
+
+  <!ELEMENT to (to:name, to:company, to:address, to:city, to:postcode)>
+  <!ATTLIST to xmlns:to CDATA #REQUIRED>
+  <!ELEMENT to:name (#PCDATA)>
+  <!ELEMENT to:company (#PCDATA)>
+  <!ELEMENT to:address (#PCDATA)>
+  <!ELEMENT to:city (#PCDATA)>
+  <!ELEMENT to:postcode (#PCDATA)>
+
+  <!ELEMENT details (details:description, details:currency, details:net, details:vat, details:total)>
+  <!ATTLIST details xmlns:details CDATA #REQUIRED>
+  <!ELEMENT details:description (#PCDATA)>
+  <!ELEMENT details:currency (#PCDATA)>
+  <!ELEMENT details:net (#PCDATA)>
+  <!ELEMENT details:vat (details:percentage, details:amount)>
+  <!ELEMENT details:percentage (#PCDATA)>
+  <!ELEMENT details:amount (#PCDATA)>
+  <!ELEMENT details:total (#PCDATA)>
