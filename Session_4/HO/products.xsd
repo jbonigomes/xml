@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://www.dcs.bbk.ac.uk/ns"
+  elementFormDefault="qualified">
+
+  <element name="products">
+    <complexType>
+      <sequence>
+        <element name="product">
+          <complexType>
+            <sequence>
+              <element name="name" type="string" />
+              <element name="description" type="string">
+              <element name="price">
+                <complexType>
+                  <sequence>
+                    <element name="currency" type="token" />
+                    <element name="amount" type="decimal" />
+                  </sequence>
+                </complexType>
+              </element>
+              <element name="contract">
+                <complexType>
+                  <sequence>
+                    <element name="option" type="string" />
+                  </sequence>
+                  <attribute name="min" type="positiveInteger" />
+                  <attribute name="max" type="positiveInteger" />
+                  <attribute name="durationtype" type="string" />
+                </complexType>
+              </element>
+            </sequence>
+            <attribute name="id" type="token" />
+          </complexType>
+        </element>
+      </sequence>
+    </complexType>
+  </element>
+
+</schema>
