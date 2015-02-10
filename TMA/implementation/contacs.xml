@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+
+<!-- <!DOCTYPE note [
+
+]> -->
+
+<contacts
+  xmlns="http://www.w3schools.com"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.w3schools.com contacs.xsd">
+
+  <contact>
+    <name>John</name>
+    <surname>Travolta</surname>
+    <address>
+      <line1>1, Some Street</line1>
+      <line2>Some City</line2>
+      <line3>WC1 5AB</line3>
+    </address>
+    <telephone>
+      <home>02070000000</home>
+      <work>02071111111</work>
+      <fax>02072222222</fax>
+      <mobile>07000000000</mobile>
+    </telephone>
+    <email>john@travolta.com</email>
+  </contact>
+
+  <contact>
+    <name>Michelle</name>
+    <surname>Pfeiffer</surname>
+    <address>
+      <line1>2, Some Street</line1>
+      <line2>Some City</line2>
+      <line3>WC1 5AB</line3>
+    </address>
+    <telephone>
+      <home>02076666666</home>
+      <work>02077777777</work>
+      <fax>02078888888</fax>
+      <mobile>07111111111</mobile>
+    </telephone>
+    <email>michelle@pfeiffer.com</email>
+  </contact>
+
+  <contact>
+    <name>Michael</name>
+    <surname>Keaton</surname>
+    <address>
+      <line1>3, Some Street</line1>
+      <line2>Some City</line2>
+      <line3>WC1 5AB</line3>
+    </address>
+    <telephone>
+      <home>02079999999</home>
+      <work>02080000000</work>
+      <fax>02081111111</fax>
+      <mobile>07222222222</mobile>
+    </telephone>
+    <email>michael@keaton.com</email>
+  </contact>
+
+  <contact>
+    <name>Jennifer</name>
+    <surname>Lawrence</surname>
+    <address>
+      <line1>1, Some Street</line1>
+      <line2>Some City</line2>
+      <line3>WC1 5AB</line3>
+    </address>
+    <telephone>
+      <home>02082222222</home>
+      <work>02083333333</work>
+      <fax>02084444444</fax>
+      <mobile>07333333333</mobile>
+    </telephone>
+    <email>jennifer@lawrence.com</email>
+  </contact>
+
+  <contact>
+    <name>George</name>
+    <surname>Clooney</surname>
+    <address>
+      <line1>1, Some Street</line1>
+      <line2>Some City</line2>
+      <line3>WC1 5AB</line3>
+    </address>
+    <telephone>
+      <home>02085555555</home>
+      <work>02086666666</work>
+      <fax>02087777777</fax>
+      <mobile>07444444444</mobile>
+    </telephone>
+    <email>george@clooney.com</email>
+  </contact>
+
+  <contact>
+    <name>Apple</name>
+    <address>
+      <line1>1 Infinite Loop</line1>
+      <line2>Cupertino</line2>
+      <line3>CA 95014</line3>
+    </address>
+    <telephone>
+      <office>08442090611</office>
+      <fax>08442090612</fax>
+    </telephone>
+    <email>steve@apple.com</email>
+  </contact>
+
+  <contact>
+    <name>Microsoft</name>
+    <address>
+      <line1>15010 Northeast 36th Street</line1>
+      <line2>Redmond</line2>
+      <line3>WA 98052</line3>
+    </address>
+    <telephone>
+      <office>04257036214</office>
+      <fax>04257036215</fax>
+    </telephone>
+    <email>bill@microsoft.com</email>
+  </contact>
+
+  <contact>
+    <name>Google</name>
+    <address>
+      <line1>1, Mountain View</line1>
+      <line2>San Francisco</line2>
+      <line3>California</line3>
+    </address>
+    <telephone>
+      <office>02070313000</office>
+      <fax>02070313001</fax>
+    </telephone>
+    <email>sergey@google.com</email>
+  </contact>
+
+  <contact>
+    <name>Canonical</name>
+    <address>
+      <line1>5th Floor, Blue Fin Building </line1>
+      <line2>110 Southwark Street</line2>
+      <line3>SE1 0SU</line3>
+    </address>
+    <telephone>
+      <office>02076302400</office>
+      <fax>02076302401</fax>
+    </telephone>
+    <email>mark@ubuntu.com</email>
+  </contact>
+
+  <contact>
+    <name>Facebook</name>
+    <address>
+      <line1>1 Hacker Way</line1>
+      <line2>Menlo Park</line2>
+      <line3>94025</line3>
+    </address>
+    <telephone>
+      <office>06505434800</office>
+      <fax>06505434801</fax>
+    </telephone>
+    <email>mark@facebook.com</email>
+  </contact>
+
+</contacts>
