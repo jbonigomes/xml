@@ -1,9 +1,32 @@
-<!ELEMENT note (to, from, heading, body)>
-<!ELEMENT to (#PCDATA)>
-<!ELEMENT from (#PCDATA)>
-<!ELEMENT heading (#PCDATA)>
-<!ELEMENT body (#PCDATA)> 
-<!ATTLIST note xmlns CDATA #REQUIRED>
-<!ATTLIST note xmlns:xsi CDATA #REQUIRED>
-<!ATTLIST note xmlns:xsi CDATA #REQUIRED>
-<!ATTLIST note xsi:schemaLocation CDATA #REQUIRED>
+<?xml version="1.0" encoding="UTF-8"?>
+  <!ELEMENT contacts (person:contact, company:contact)>
+  <!ATTLIST contacts xmlns CDATA #REQUIRED>
+  <!ATTLIST contacts xmlns:xsi CDATA #REQUIRED>
+  <!ATTLIST contacts xmlns:person CDATA #REQUIRED>
+  <!ATTLIST contacts xmlns:company CDATA #REQUIRED>
+  <!ATTLIST contacts xsi:schemaLocation CDATA #REQUIRED>
+
+  <!ELEMENT person:contact (person:name, person:surname, person:address, person:telephone, person:email)>
+  <!ELEMENT person:name (#PCDATA)>
+  <!ELEMENT person:surname (#PCDATA)>
+  <!ELEMENT person:address (person:line1, person:line2, person:line3)>
+  <!ELEMENT person:line1 (#PCDATA)>
+  <!ELEMENT person:line2 (#PCDATA)>
+  <!ELEMENT person:line3 (#PCDATA)>
+  <!ELEMENT person:telephone (person:home, person:work, person:fax, person:mobile)>
+  <!ELEMENT person:home (#PCDATA)>
+  <!ELEMENT person:work (#PCDATA)>
+  <!ELEMENT person:fax (#PCDATA)>
+  <!ELEMENT person:mobile (#PCDATA)>
+  <!ELEMENT person:email (#PCDATA)>
+
+  <!ELEMENT company:contact (company:name, company:address, company:telephone, company:email)>
+  <!ELEMENT company:name (#PCDATA)>
+  <!ELEMENT company:address (company:line1, company:line2, company:line3)>
+  <!ELEMENT company:line1 (#PCDATA)>
+  <!ELEMENT company:line2 (#PCDATA)>
+  <!ELEMENT company:line3 (#PCDATA)>
+  <!ELEMENT company:telephone (company:office, company:fax)>
+  <!ELEMENT company:office (#PCDATA)>
+  <!ELEMENT company:fax (#PCDATA)>
+  <!ELEMENT company:email (#PCDATA)>

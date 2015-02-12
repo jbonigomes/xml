@@ -1,18 +1,75 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema
+  xmlns="http://www.w3.org/2001"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  targetNamespace="http://www.w3schools.com"
-  xmlns="http://www.w3schools.com"
-  elementFormDefault="qualified"> 
-  
-  <xs:element name="contact">
+  targetNamespace="http://www.dcs.bbk.ac.uk/ns"
+  elementFormDefault="qualified">
+
+  <xs:element name="contacts">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="to" type="xs:string"/>
-        <xs:element name="from" type="xs:string"/>
-        <xs:element name="heading" type="xs:string"/>
-        <xs:element name="body" type="xs:string"/>
+
+        <xs:element name="person:contact">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="person:name" type="string" />
+              <xs:element name="person:surname" type="string" />
+              <xs:element name="person:address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="person:line1" type="string" />
+                    <xs:element name="person:line2" type="string" />
+                    <xs:element name="person:line3" type="string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="person:telephone">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="person:home" type="string" />
+                    <xs:element name="person:work" type="string" />
+                    <xs:element name="person:fax" type="string" />
+                    <xs:element name="person:mobile" type="string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="person:email" type="string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="company:contact">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="company:name" type="string" />
+              <xs:element name="company:address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="company:line1" type="string" />
+                    <xs:element name="company:line2" type="string" />
+                    <xs:element name="company:line3" type="string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="company:telephone">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="company:office" type="string" />
+                    <xs:element name="company:fax" type="string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="company:email" type="string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
       </xs:sequence>
+      <attribute name="xmlns" type="string" />
+      <attribute name="xmlns:xsi" type="string" />
+      <attribute name="xmlns:person" type="string" />
+      <attribute name="xmlns:company" type="string" />
+      <attribute name="xsi:schema" type="string" />
     </xs:complexType>
-  </xs:element>  
+  </xs:element>
 </xs:schema>
