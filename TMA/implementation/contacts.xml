@@ -1,42 +1,6 @@
 <?xml version="1.0"?>
 
-<!-- <!DOCTYPE invoice SYSTEM "contacts.dtd"> -->
-
-<!DOCTYPE contacts [
-
-  <!ELEMENT contacts (contact*)>
-  <!ATTLIST contacts xmlns CDATA #REQUIRED>
-  <!ATTLIST contacts xmlns:xsi CDATA #REQUIRED>
-  <!ATTLIST contacts xsi:schemaLocation CDATA #REQUIRED>
-
-  <!ELEMENT contact ((person | company), address, email)>
-
-  <!ELEMENT person (firstname, lastname, phonehome, phonework, phonefax, phonemobile)>
-
-  <!ELEMENT firstname (#PCDATA)>
-  <!ELEMENT lastname (#PCDATA)>
-  <!ELEMENT phonehome (#PCDATA)>
-  <!ELEMENT phonework (#PCDATA)>
-  <!ELEMENT phonefax (#PCDATA)>
-  <!ELEMENT phonemobile (#PCDATA)>
-
-  <!ELEMENT company (name, telephone, fax?)>
-
-  <!ELEMENT name (#PCDATA)>
-  <!ELEMENT telephone (#PCDATA)>
-  <!ELEMENT fax (#PCDATA)>
-
-  <!ELEMENT address (line1, line2?, line3?, postalcode, city, country)>
-  <!ELEMENT line1 (#PCDATA)>
-  <!ELEMENT line2 (#PCDATA)>
-  <!ELEMENT line3 (#PCDATA)>
-  <!ELEMENT postalcode (#PCDATA)>
-  <!ELEMENT city (#PCDATA)>
-  <!ELEMENT country (#PCDATA)>
-
-  <!ELEMENT email (#PCDATA)>
-
-]>
+<!DOCTYPE invoice SYSTEM "contacts.dtd">
 
 <contacts
   xmlns="http://titan.dcs.bbk.ac.uk/~jgomes01/xmltma"

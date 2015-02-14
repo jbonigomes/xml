@@ -1,0 +1,21 @@
+/* All direct children of wkhtmltopdfcontainer must have it's width set in % */
+.wkhtmltopdfcontainer {
+	overflow: hidden;
+	width: 100%;
+	height: 1096px;
+}
+
+/* The resets */
+body {
+	margin: 0;
+}
+
+/* Handy Classes */
+.hc-relative {
+	position: relative;
+}
+
+/* The main CSS */
+.container {
+	margin: 20px;
+}

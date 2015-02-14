@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!ELEMENT contacts (person:contact, company:contact)>
+  <!ELEMENT contacts (contact*)>
   <!ATTLIST contacts xmlns CDATA #REQUIRED>
   <!ATTLIST contacts xmlns:xsi CDATA #REQUIRED>
-  <!ATTLIST contacts xmlns:person CDATA #REQUIRED>
-  <!ATTLIST contacts xmlns:company CDATA #REQUIRED>
   <!ATTLIST contacts xsi:schemaLocation CDATA #REQUIRED>
 
-  <!ELEMENT person:contact (person:name, person:surname, person:address, person:telephone, person:email)>
-  <!ELEMENT person:name (#PCDATA)>
-  <!ELEMENT person:surname (#PCDATA)>
-  <!ELEMENT person:address (person:line1, person:line2, person:line3)>
-  <!ELEMENT person:line1 (#PCDATA)>
-  <!ELEMENT person:line2 (#PCDATA)>
-  <!ELEMENT person:line3 (#PCDATA)>
-  <!ELEMENT person:telephone (person:home, person:work, person:fax, person:mobile)>
-  <!ELEMENT person:home (#PCDATA)>
-  <!ELEMENT person:work (#PCDATA)>
-  <!ELEMENT person:fax (#PCDATA)>
-  <!ELEMENT person:mobile (#PCDATA)>
-  <!ELEMENT person:email (#PCDATA)>
+  <!ELEMENT contact ((person | company), address, email)>
 
-  <!ELEMENT company:contact (company:name, company:address, company:telephone, company:email)>
-  <!ELEMENT company:name (#PCDATA)>
-  <!ELEMENT company:address (company:line1, company:line2, company:line3)>
-  <!ELEMENT company:line1 (#PCDATA)>
-  <!ELEMENT company:line2 (#PCDATA)>
-  <!ELEMENT company:line3 (#PCDATA)>
-  <!ELEMENT company:telephone (company:office, company:fax)>
-  <!ELEMENT company:office (#PCDATA)>
-  <!ELEMENT company:fax (#PCDATA)>
-  <!ELEMENT company:email (#PCDATA)>
+  <!ELEMENT person (firstname, lastname, phonehome, phonework, phonefax, phonemobile)>
+
+  <!ELEMENT firstname (#PCDATA)>
+  <!ELEMENT lastname (#PCDATA)>
+  <!ELEMENT phonehome (#PCDATA)>
+  <!ELEMENT phonework (#PCDATA)>
+  <!ELEMENT phonefax (#PCDATA)>
+  <!ELEMENT phonemobile (#PCDATA)>
+
+  <!ELEMENT company (name, telephone, fax?)>
+
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT telephone (#PCDATA)>
+  <!ELEMENT fax (#PCDATA)>
+
+  <!ELEMENT address (line1, line2?, line3?, postalcode, city, country)>
+  <!ELEMENT line1 (#PCDATA)>
+  <!ELEMENT line2 (#PCDATA)>
+  <!ELEMENT line3 (#PCDATA)>
+  <!ELEMENT postalcode (#PCDATA)>
+  <!ELEMENT city (#PCDATA)>
+  <!ELEMENT country (#PCDATA)>
+
+  <!ELEMENT email (#PCDATA)>
