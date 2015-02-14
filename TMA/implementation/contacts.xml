@@ -7,200 +7,213 @@
   <!ELEMENT contacts (contact*)>
   <!ATTLIST contacts xmlns CDATA #REQUIRED>
   <!ATTLIST contacts xmlns:xsi CDATA #REQUIRED>
-  <!ATTLIST contacts xmlns:person CDATA #REQUIRED>
-  <!ATTLIST contacts xmlns:company CDATA #REQUIRED>
   <!ATTLIST contacts xsi:schemaLocation CDATA #REQUIRED>
 
-  <!ELEMENT contact (
-    ((person:name, person:surname) | company:name),
-    address,
-    (person:telephone | company:telephone),
-    email
-  )>
+  <!ELEMENT contact ((person | company), address, email)>
 
-  <!ELEMENT person:name (#PCDATA)>
-  <!ELEMENT person:surname (#PCDATA)>
-  <!ELEMENT company:name (#PCDATA)>
+  <!ELEMENT person (firstname, lastname, phonehome, phonework, phonefax, phonemobile)>
 
-  <!ELEMENT address (line1, line2, line3)>
+  <!ELEMENT firstname (#PCDATA)>
+  <!ELEMENT lastname (#PCDATA)>
+  <!ELEMENT phonehome (#PCDATA)>
+  <!ELEMENT phonework (#PCDATA)>
+  <!ELEMENT phonefax (#PCDATA)>
+  <!ELEMENT phonemobile (#PCDATA)>
+
+  <!ELEMENT company (name, telephone, fax?)>
+
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT telephone (#PCDATA)>
+  <!ELEMENT fax (#PCDATA)>
+
+  <!ELEMENT address (line1, line2?, line3?, postalcode, city, country)>
   <!ELEMENT line1 (#PCDATA)>
   <!ELEMENT line2 (#PCDATA)>
   <!ELEMENT line3 (#PCDATA)>
-
-  <!ELEMENT person:telephone (person:home, person:work, person:fax, person:mobile)>
-  <!ELEMENT person:home (#PCDATA)>
-  <!ELEMENT person:work (#PCDATA)>
-  <!ELEMENT person:fax (#PCDATA)>
-  <!ELEMENT person:mobile (#PCDATA)>
-
-
-  <!ELEMENT company:telephone (company:office, company:fax)>
-  <!ELEMENT company:office (#PCDATA)>
-  <!ELEMENT company:fax (#PCDATA)>
+  <!ELEMENT postalcode (#PCDATA)>
+  <!ELEMENT city (#PCDATA)>
+  <!ELEMENT country (#PCDATA)>
 
   <!ELEMENT email (#PCDATA)>
 
 ]>
 
 <contacts
-  xmlns="http://www.w3schools.com"
+  xmlns="http://titan.dcs.bbk.ac.uk/~jgomes01/xmltma/"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:person="http://www.w3.org/person"
-  xmlns:company="http://www.w3.org/company"
-  xsi:schemaLocation="http://www.w3.org contacs.xsd">
+  xsi:schemaLocation="http://titan.dcs.bbk.ac.uk/~jgomes01/xmltma/ contacs.xsd">
 
   <contact>
-    <person:name>John</person:name>
-    <person:surname>Travolta</person:surname>
+    <person>
+      <firstname>John</firstname>
+      <lastname>Travolta</lastname>
+      <phonehome>02070000000</phonehome>
+      <phonework>02071111111</phonework>
+      <phonefax>02072222222</phonefax>
+      <phonemobile>07000000000</phonemobile>
+    </person>
     <address>
       <line1>1, Some Street</line1>
-      <line2>Some City</line2>
-      <line3>WC1 5AB</line3>
+      <line2>Some Place</line2>
+      <line3>Some Neighbourhood</line3>
+      <postalcode>WC1 5AB</postalcode>
+      <city>London</city>
+      <country>UK</country>
     </address>
-    <person:telephone>
-      <person:home>02070000000</person:home>
-      <person:work>02071111111</person:work>
-      <person:fax>02072222222</person:fax>
-      <person:mobile>07000000000</person:mobile>
-    </person:telephone>
     <email>john@travolta.com</email>
   </contact>
 
   <contact>
-    <person:name>Michelle</person:name>
-    <person:surname>Pfeiffer</person:surname>
+    <person>
+      <firstname>Michelle</firstname>
+      <lastname>Pfeiffer</lastname>
+      <phonehome>02076666666</phonehome>
+      <phonework>02077777777</phonework>
+      <phonefax>02078888888</phonefax>
+      <phonemobile>07111111111</phonemobile>
+    </person>
     <address>
       <line1>2, Some Street</line1>
-      <line2>Some City</line2>
-      <line3>WC1 5AB</line3>
+      <postalcode>WC1 5AB</postalcode>
+      <city>London</city>
+      <country>UK</country>
     </address>
-    <person:telephone>
-      <person:home>02076666666</person:home>
-      <person:work>02077777777</person:work>
-      <person:fax>02078888888</person:fax>
-      <person:mobile>07111111111</person:mobile>
-    </person:telephone>
     <email>michelle@pfeiffer.com</email>
   </contact>
 
   <contact>
-    <person:name>Michael</person:name>
-    <person:surname>Keaton</person:surname>
+    <person>
+      <firstname>Michael</firstname>
+      <lastname>Keaton</lastname>
+      <phonehome>02079999999</phonehome>
+      <phonework>02080000000</phonework>
+      <phonefax>02081111111</phonefax>
+      <phonemobile>07222222222</phonemobile>
+    </person>
     <address>
       <line1>3, Some Street</line1>
-      <line2>Some City</line2>
-      <line3>WC1 5AB</line3>
+      <postalcode>WC1 5AB</postalcode>
+      <city>London</city>
+      <country>UK</country>
     </address>
-    <person:telephone>
-      <person:home>02079999999</person:home>
-      <person:work>02080000000</person:work>
-      <person:fax>02081111111</person:fax>
-      <person:mobile>07222222222</person:mobile>
-    </person:telephone>
     <email>michael@keaton.com</email>
   </contact>
 
   <contact>
-    <person:name>Jennifer</person:name>
-    <person:surname>Lawrence</person:surname>
+    <person>
+      <firstname>Jennifer</firstname>
+      <lastname>Lawrence</lastname>
+      <phonehome>02082222222</phonehome>
+      <phonework>02083333333</phonework>
+      <phonefax>02084444444</phonefax>
+      <phonemobile>07333333333</phonemobile>
+    </person>
     <address>
       <line1>1, Some Street</line1>
-      <line2>Some City</line2>
-      <line3>WC1 5AB</line3>
+      <postalcode>WC1 5AB</postalcode>
+      <city>London</city>
+      <country>UK</country>
     </address>
-    <person:telephone>
-      <person:home>02082222222</person:home>
-      <person:work>02083333333</person:work>
-      <person:fax>02084444444</person:fax>
-      <person:mobile>07333333333</person:mobile>
-    </person:telephone>
     <email>jennifer@lawrence.com</email>
   </contact>
 
   <contact>
-    <person:name>George</person:name>
-    <person:surname>Clooney</person:surname>
+    <person>
+      <firstname>George</firstname>
+      <lastname>Clooney</lastname>
+      <phonehome>02085555555</phonehome>
+      <phonework>02086666666</phonework>
+      <phonefax>02087777777</phonefax>
+      <phonemobile>07444444444</phonemobile>
+    </person>
     <address>
       <line1>1, Some Street</line1>
       <line2>Some City</line2>
-      <line3>WC1 5AB</line3>
+      <postalcode>WC1 5AB</postalcode>
+      <city>London</city>
+      <country>UK</country>
     </address>
-    <person:telephone>
-      <person:home>02085555555</person:home>
-      <person:work>02086666666</person:work>
-      <person:fax>02087777777</person:fax>
-      <person:mobile>07444444444</person:mobile>
-    </person:telephone>
     <email>george@clooney.com</email>
   </contact>
 
   <contact>
-    <company:name>Apple</company:name>
+    <company>
+      <name>Apple</name>
+      <telephone>08442090611</telephone>
+      <fax>08442090612</fax>
+    </company>
     <address>
       <line1>1 Infinite Loop</line1>
-      <line2>Cupertino</line2>
-      <line3>CA 95014</line3>
+      <line2>California</line2>
+      <postalcode>CA 95014</postalcode>
+      <city>Cupertino</city>
+      <country>USA</country>
     </address>
-    <company:telephone>
-      <company:office>08442090611</company:office>
-      <company:fax>08442090612</company:fax>
-    </company:telephone>
     <email>steve@apple.com</email>
   </contact>
 
   <contact>
-    <company:name>Microsoft</company:name>
+    <company>
+      <name>Microsoft</name>
+      <telephone>04257036214</telephone>
+      <fax>04257036215</fax>
+    </company>
     <address>
-      <line1>15010 Northeast 36th Street</line1>
-      <line2>Redmond</line2>
-      <line3>WA 98052</line3>
+      <line1>15010 Northeast</line1>
+      <line2>36th Street</line2>
+      <postalcode>WA 98052</postalcode>
+      <city>Redmond</city>
+      <country>USA</country>
     </address>
-    <company:telephone>
-      <company:office>04257036214</company:office>
-      <company:fax>04257036215</company:fax>
-    </company:telephone>
     <email>bill@microsoft.com</email>
   </contact>
 
   <contact>
-    <company:name>Google</company:name>
+    <company>
+      <name>Google</name>
+      <telephone>02070313000</telephone>
+    </company>
     <address>
       <line1>1, Mountain View</line1>
-      <line2>San Francisco</line2>
-      <line3>California</line3>
+      <line2>California</line2>
+      <postalcode>CA 94035</postalcode>
+      <city>Palo Alto</city>
+      <country>USA</country>
     </address>
-    <company:telephone>
-      <company:office>02070313000</company:office>
-      <company:fax>02070313001</company:fax>
-    </company:telephone>
     <email>sergey@google.com</email>
   </contact>
 
   <contact>
-    <company:name>Canonical</company:name>
+    <company>
+      <name>Canonical</name>
+      <telephone>02076302400</telephone>
+      <fax>02076302401</fax>
+    </company>
     <address>
-      <line1>5th Floor, Blue Fin Building </line1>
-      <line2>110 Southwark Street</line2>
-      <line3>SE1 0SU</line3>
+      <line1>5th Floor</line1>
+      <line2>Blue Fin Building</line2>
+      <line3>110 Southwark Street</line3>
+      <postalcode>SE1 0SU</postalcode>
+      <city>London</city>
+      <country>UK</country>
     </address>
-    <company:telephone>
-      <company:office>02076302400</company:office>
-      <company:fax>02076302401</company:fax>
-    </company:telephone>
     <email>mark@ubuntu.com</email>
   </contact>
 
   <contact>
-    <company:name>Facebook</company:name>
+    <company>
+      <name>Facebook</name>
+      <telephone>06505434800</telephone>
+      <fax>06505434801</fax>
+    </company>
     <address>
       <line1>1 Hacker Way</line1>
       <line2>Menlo Park</line2>
-      <line3>94025</line3>
+      <line3>California</line3>
+      <postalcode>CA 94025</postalcode>
+      <city>Palo Alto</city>
+      <country>USA</country>
     </address>
-    <company:telephone>
-      <company:office>06505434800</company:office>
-      <company:fax>06505434801</company:fax>
-    </company:telephone>
     <email>mark@facebook.com</email>
   </contact>
 
