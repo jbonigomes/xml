@@ -4,37 +4,41 @@
 
 <!DOCTYPE contacts [
 
-  <!ELEMENT contacts (person:contact, company:contact)>
+  <!ELEMENT contacts (contact*)>
   <!ATTLIST contacts xmlns CDATA #REQUIRED>
   <!ATTLIST contacts xmlns:xsi CDATA #REQUIRED>
   <!ATTLIST contacts xmlns:person CDATA #REQUIRED>
   <!ATTLIST contacts xmlns:company CDATA #REQUIRED>
   <!ATTLIST contacts xsi:schemaLocation CDATA #REQUIRED>
 
-  <!ELEMENT person:contact (person:name, person:surname, person:address, person:telephone, person:email)>
+  <!ELEMENT contact (
+    ((person:name, person:surname) | company:name),
+    address,
+    (person:telephone | company:telephone),
+    email
+  )>
+
   <!ELEMENT person:name (#PCDATA)>
   <!ELEMENT person:surname (#PCDATA)>
-  <!ELEMENT person:address (person:line1, person:line2, person:line3)>
-  <!ELEMENT person:line1 (#PCDATA)>
-  <!ELEMENT person:line2 (#PCDATA)>
-  <!ELEMENT person:line3 (#PCDATA)>
+  <!ELEMENT company:name (#PCDATA)>
+
+  <!ELEMENT address (line1, line2, line3)>
+  <!ELEMENT line1 (#PCDATA)>
+  <!ELEMENT line2 (#PCDATA)>
+  <!ELEMENT line3 (#PCDATA)>
+
   <!ELEMENT person:telephone (person:home, person:work, person:fax, person:mobile)>
   <!ELEMENT person:home (#PCDATA)>
   <!ELEMENT person:work (#PCDATA)>
   <!ELEMENT person:fax (#PCDATA)>
   <!ELEMENT person:mobile (#PCDATA)>
-  <!ELEMENT person:email (#PCDATA)>
 
-  <!ELEMENT company:contact (company:name, company:address, company:telephone, company:email)>
-  <!ELEMENT company:name (#PCDATA)>
-  <!ELEMENT company:address (company:line1, company:line2, company:line3)>
-  <!ELEMENT company:line1 (#PCDATA)>
-  <!ELEMENT company:line2 (#PCDATA)>
-  <!ELEMENT company:line3 (#PCDATA)>
+
   <!ELEMENT company:telephone (company:office, company:fax)>
   <!ELEMENT company:office (#PCDATA)>
   <!ELEMENT company:fax (#PCDATA)>
-  <!ELEMENT company:email (#PCDATA)>
+
+  <!ELEMENT email (#PCDATA)>
 
 ]>
 
@@ -45,159 +49,159 @@
   xmlns:company="http://www.w3.org/company"
   xsi:schemaLocation="http://www.w3.org contacs.xsd">
 
-  <person:contact>
+  <contact>
     <person:name>John</person:name>
     <person:surname>Travolta</person:surname>
-    <person:address>
-      <person:line1>1, Some Street</person:line1>
-      <person:line2>Some City</person:line2>
-      <person:line3>WC1 5AB</person:line3>
-    </person:address>
+    <address>
+      <line1>1, Some Street</line1>
+      <line2>Some City</line2>
+      <line3>WC1 5AB</line3>
+    </address>
     <person:telephone>
       <person:home>02070000000</person:home>
       <person:work>02071111111</person:work>
       <person:fax>02072222222</person:fax>
       <person:mobile>07000000000</person:mobile>
     </person:telephone>
-    <person:email>john@travolta.com</person:email>
-  </person:contact>
+    <email>john@travolta.com</email>
+  </contact>
 
-  <person:contact>
+  <contact>
     <person:name>Michelle</person:name>
     <person:surname>Pfeiffer</person:surname>
-    <person:address>
-      <person:line1>2, Some Street</person:line1>
-      <person:line2>Some City</person:line2>
-      <person:line3>WC1 5AB</person:line3>
-    </person:address>
+    <address>
+      <line1>2, Some Street</line1>
+      <line2>Some City</line2>
+      <line3>WC1 5AB</line3>
+    </address>
     <person:telephone>
       <person:home>02076666666</person:home>
       <person:work>02077777777</person:work>
       <person:fax>02078888888</person:fax>
       <person:mobile>07111111111</person:mobile>
     </person:telephone>
-    <person:email>michelle@pfeiffer.com</person:email>
-  </person:contact>
+    <email>michelle@pfeiffer.com</email>
+  </contact>
 
-  <person:contact>
+  <contact>
     <person:name>Michael</person:name>
     <person:surname>Keaton</person:surname>
-    <person:address>
-      <person:line1>3, Some Street</person:line1>
-      <person:line2>Some City</person:line2>
-      <person:line3>WC1 5AB</person:line3>
-    </person:address>
+    <address>
+      <line1>3, Some Street</line1>
+      <line2>Some City</line2>
+      <line3>WC1 5AB</line3>
+    </address>
     <person:telephone>
       <person:home>02079999999</person:home>
       <person:work>02080000000</person:work>
       <person:fax>02081111111</person:fax>
       <person:mobile>07222222222</person:mobile>
     </person:telephone>
-    <person:email>michael@keaton.com</person:email>
-  </person:contact>
+    <email>michael@keaton.com</email>
+  </contact>
 
-  <person:contact>
+  <contact>
     <person:name>Jennifer</person:name>
     <person:surname>Lawrence</person:surname>
-    <person:address>
-      <person:line1>1, Some Street</person:line1>
-      <person:line2>Some City</person:line2>
-      <person:line3>WC1 5AB</person:line3>
-    </person:address>
+    <address>
+      <line1>1, Some Street</line1>
+      <line2>Some City</line2>
+      <line3>WC1 5AB</line3>
+    </address>
     <person:telephone>
       <person:home>02082222222</person:home>
       <person:work>02083333333</person:work>
       <person:fax>02084444444</person:fax>
       <person:mobile>07333333333</person:mobile>
     </person:telephone>
-    <person:email>jennifer@lawrence.com</person:email>
-  </person:contact>
+    <email>jennifer@lawrence.com</email>
+  </contact>
 
-  <person:contact>
+  <contact>
     <person:name>George</person:name>
     <person:surname>Clooney</person:surname>
-    <person:address>
-      <person:line1>1, Some Street</person:line1>
-      <person:line2>Some City</person:line2>
-      <person:line3>WC1 5AB</person:line3>
-    </person:address>
+    <address>
+      <line1>1, Some Street</line1>
+      <line2>Some City</line2>
+      <line3>WC1 5AB</line3>
+    </address>
     <person:telephone>
       <person:home>02085555555</person:home>
       <person:work>02086666666</person:work>
       <person:fax>02087777777</person:fax>
       <person:mobile>07444444444</person:mobile>
     </person:telephone>
-    <person:email>george@clooney.com</person:email>
-  </person:contact>
+    <email>george@clooney.com</email>
+  </contact>
 
-  <company:contact>
+  <contact>
     <company:name>Apple</company:name>
-    <company:address>
-      <company:line1>1 Infinite Loop</company:line1>
-      <company:line2>Cupertino</company:line2>
-      <company:line3>CA 95014</company:line3>
-    </company:address>
+    <address>
+      <line1>1 Infinite Loop</line1>
+      <line2>Cupertino</line2>
+      <line3>CA 95014</line3>
+    </address>
     <company:telephone>
       <company:office>08442090611</company:office>
       <company:fax>08442090612</company:fax>
     </company:telephone>
-    <company:email>steve@apple.com</company:email>
-  </company:contact>
+    <email>steve@apple.com</email>
+  </contact>
 
-  <company:contact>
+  <contact>
     <company:name>Microsoft</company:name>
-    <company:address>
-      <company:line1>15010 Northeast 36th Street</company:line1>
-      <company:line2>Redmond</company:line2>
-      <company:line3>WA 98052</company:line3>
-    </company:address>
+    <address>
+      <line1>15010 Northeast 36th Street</line1>
+      <line2>Redmond</line2>
+      <line3>WA 98052</line3>
+    </address>
     <company:telephone>
       <company:office>04257036214</company:office>
       <company:fax>04257036215</company:fax>
     </company:telephone>
-    <company:email>bill@microsoft.com</company:email>
-  </company:contact>
+    <email>bill@microsoft.com</email>
+  </contact>
 
-  <company:contact>
+  <contact>
     <company:name>Google</company:name>
-    <company:address>
-      <company:line1>1, Mountain View</company:line1>
-      <company:line2>San Francisco</company:line2>
-      <company:line3>California</company:line3>
-    </company:address>
+    <address>
+      <line1>1, Mountain View</line1>
+      <line2>San Francisco</line2>
+      <line3>California</line3>
+    </address>
     <company:telephone>
       <company:office>02070313000</company:office>
       <company:fax>02070313001</company:fax>
     </company:telephone>
-    <company:email>sergey@google.com</company:email>
-  </company:contact>
+    <email>sergey@google.com</email>
+  </contact>
 
-  <company:contact>
+  <contact>
     <company:name>Canonical</company:name>
-    <company:address>
-      <company:line1>5th Floor, Blue Fin Building </company:line1>
-      <company:line2>110 Southwark Street</company:line2>
-      <company:line3>SE1 0SU</company:line3>
-    </company:address>
+    <address>
+      <line1>5th Floor, Blue Fin Building </line1>
+      <line2>110 Southwark Street</line2>
+      <line3>SE1 0SU</line3>
+    </address>
     <company:telephone>
       <company:office>02076302400</company:office>
       <company:fax>02076302401</company:fax>
     </company:telephone>
-    <company:email>mark@ubuntu.com</company:email>
-  </company:contact>
+    <email>mark@ubuntu.com</email>
+  </contact>
 
-  <company:contact>
+  <contact>
     <company:name>Facebook</company:name>
-    <company:address>
-      <company:line1>1 Hacker Way</company:line1>
-      <company:line2>Menlo Park</company:line2>
-      <company:line3>94025</company:line3>
-    </company:address>
+    <address>
+      <line1>1 Hacker Way</line1>
+      <line2>Menlo Park</line2>
+      <line3>94025</line3>
+    </address>
     <company:telephone>
       <company:office>06505434800</company:office>
       <company:fax>06505434801</company:fax>
     </company:telephone>
-    <company:email>mark@facebook.com</company:email>
+    <email>mark@facebook.com</email>
   </contact>
 
 </contacts>
