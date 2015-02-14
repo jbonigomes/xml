@@ -39,9 +39,9 @@
 ]>
 
 <contacts
-  xmlns="http://titan.dcs.bbk.ac.uk/~jgomes01/xmltma/"
+  xmlns="http://titan.dcs.bbk.ac.uk/~jgomes01/xmltma"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://titan.dcs.bbk.ac.uk/~jgomes01/xmltma/ contacs.xsd">
+  xsi:schemaLocation="http://titan.dcs.bbk.ac.uk/~jgomes01/xmltma contacs.xsd">
 
   <contact>
     <person>
