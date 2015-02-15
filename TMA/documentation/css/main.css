@@ -8,14 +8,46 @@
 /* The resets */
 body {
 	margin: 0;
+  color: #333;
+  font-size: 12px;
+  font-family: arial;
 }
 
-/* Handy Classes */
-.hc-relative {
-	position: relative;
+h1, h2, h3 {
+  margin: 1.5em 0 1em 0;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+a {
+  color: #f70;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  margin-bottom: 5px;
 }
 
 /* The main CSS */
 .container {
-	margin: 20px;
+	padding: 80px 100px 100px 100px;
+}
+
+.signature {
+  padding: 0;
+  list-style-type: none;
 }

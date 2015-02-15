@@ -14,9 +14,8 @@
 
 <body>
 	<div class="wkhtmltopdfcontainer">
-
 		<div class="container">
-			<ul>
+			<ul class="signature">
 				<li><b>Name:</b> Jose B. Gomes</li>
 				<li><b>Tutor:</b> Muawya Elday</li>
 				<li><b>ID:</b> 12500741</li>
@@ -57,7 +56,11 @@
 			</p>
 
 			<p><img src="img/valid.png"></p>
+		</div>
+	</div>
 
+	<div class="wkhtmltopdfcontainer">
+		<div class="container">
 			<h3>The XML design</h3>
 
 			<p>
@@ -91,23 +94,35 @@
 
 			<ul>
 				<li>
-					contact: a repeatable container that holds all the information for a
-					single contact
+					<b>contact:</b> a repeatable container that holds all the information
+					for a single contact
 				</li>
 				<li>
-					person: an element that holds all the unique information common only
-					to a person
+					<b>person:</b> an element that holds all the unique information common
+					only to a person
 				</li>
 				<li>
-					company: an element that holds all the unique information common only
-					to a company
+					<b>company:</b> an element that holds all the unique information
+					common only to a company
 				</li>
-				<li>line1: added to compliment and better describe an address</li>
-				<li>line2: added to compliment and better describe an address</li>
-				<li>line3: added to compliment and better describe an address</li>
-				<li>postalcode: added to compliment and better describe an address</li>
-				<li>city: added to compliment and better describe an address</li>
-				<li>country: added to compliment and better describe an address</li>
+				<li>
+					<b>line1:</b> added to compliment and better describe an address
+				</li>
+				<li>
+					<b>line2:</b> added to compliment and better describe an address
+				</li>
+				<li>
+					<b>line3:</b> added to compliment and better describe an address
+				</li>
+				<li>
+					<b>postalcode:</b> added to compliment and better describe an address
+				</li>
+				<li>
+					<b>city:</b> added to compliment and better describe an address
+				</li>
+				<li>
+					<b>country:</b> added to compliment and better describe an address
+				</li>
 			</ul>
 
 			<p>
@@ -135,41 +150,40 @@
 
 			<ul>
 				<li>
-					contact: this is a repeatable element, this element can be repeated as
-					many times as there are contacts.
+					<b>contact:</b> this is a repeatable element, this element can be
+					repeated as many times as there are contacts.
 				</li>
 				<li>
-					person and company: within a contact, there can only be either one
-					person or one company
+					<b>person and company:</b> within a contact, there can only be either
+					one person or one company
 				</li>
-				<li>fax: within a company, a fax number is not mandatory</li>
+				<li><b>fax:</b> within a company, a fax number is not mandatory</li>
 				<li>
-					line2 and line3: those elements are not mandatory and only seen as
-					complimentary to the other more important elements under address
+					<b>line2 and line3:</b> those elements are not mandatory and only seen
+					as complimentary to the other more important elements under address
 				</li>
 			</ul>
+
+			<h3>Problems encountered</h3>
+
+			<p>
+				Although this assignment is rather simplistic, the final outcome of the
+				XML document does not make any use of namespaces, the reason behind this
+				decision comes from the fact that I could not get the XML Schema to
+				validate an XML namespaced tag.
+			</p>
+
+			<p>
+				This assignment had three repeating element names that had to be ajusted,
+				in order to correctly validate the documents without repetition. Those
+				element names were, 'telephone', 'fax' and 'name', both appeared under
+				'company' and 'person'. In order to work around this problem, all
+				telephone numbers under 'person' received a prefix named 'telephone'
+				followed by the type name. In addition, a persons 'name' was updated to
+				'firstname' and 'surname' to 'lastname' for consistency.
+			</p>
 		</div>
-
-		<h3>Problems encountered</h3>
-
-		<p>
-			Although this assignment is rather simplistic, the final outcome of the
-			XML document does not make any use of namespaces, the reason behind this
-			decision comes from the fact that I could not get the XML Schema to
-			validate an XML namespaced tag.
-		</p>
-
-		<p>
-			This assignment had three repeating element names that had to be ajusted,
-			in order to correctly validate the documents without repetition. Those
-			element names were, 'telephone', 'fax' and 'name', both appeared under
-			'company' and 'person'. In order to work around this problem, all
-			telephone numbers under 'person' received a prefix named 'telephone'
-			followed by the type name. In addition, a persons 'name' was updated to
-			'firstname' and 'surname' to 'lastname' for consistency.
-		</p>
-
-	</div><!-- /.wkhtmltopdfcontainer -->
+	</div>
 
 	<!-- JavaScript -->
 	<script src="js/jquery.js"></script>
