@@ -4,7 +4,11 @@
 
 ]> -->
 
-<products xmlns="http://www.dcs.bbk.ac.uk/~dionisis/ns/products">
+<products
+  xmlns="http://titan.dcs.bbk.ac.uk/~jgomes01/xmltma"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://titan.dcs.bbk.ac.uk/~jgomes01/xmltma products.xsd">
+
   <product id="12344">
     <name>Orange SPV</name>
     <description>Orange WAP phone</description>
