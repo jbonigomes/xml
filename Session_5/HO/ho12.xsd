@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://www.w3schools.com"
+  elementFormDefault="qualified"
+  attributeFormDefault="qualified">
+
+  <xs:element name="chapter">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="para" type="xs:string" />
+        <xs:element name="list" type="xs:string" />
+        <xs:element name="table" type="xs:string" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

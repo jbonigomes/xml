@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE document [
+  <!ELEMENT document (title, (para | list | table)*)>
+  <!ATTLIST document xmlns CDATA #REQUIRED>
+  <!ATTLIST document xmlns:xsi CDATA #REQUIRED>
+  <!ATTLIST document xsi:schemaLocation CDATA #REQUIRED>
+
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT para (#PCDATA)>
+  <!ELEMENT list (#PCDATA)>
+  <!ELEMENT table (#PCDATA)>
+]>
+
+<document
+  xmlns="http://www.w3schools.com"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.w3schools.com ho12.xsd">
+
+  <title>Some text</title>
+  <para>Some text</para>
+  <para>Some text</para>
+  <list>Some text</list>
+  <para>Some text</para>
+  <table>Some text</table>
+  <para>Some text</para>
+</document>
