@@ -5,9 +5,9 @@
 ]> -->
 
 <products
-  xmlns="http://titan.dcs.bbk.ac.uk/~jgomes01/xmltma"
+  xmlns="http://www.w3schools.com"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://titan.dcs.bbk.ac.uk/~jgomes01/xmltma products.xsd">
+  xsi:schemaLocation="http://www.w3schools.com products.xsd">
 
   <product id="12344">
     <name>Orange SPV</name>
@@ -21,12 +21,35 @@
       <option>Free replacement if damaged</option>
     </contract>
   </product>
+
   <product id="125674">
     <name>Sony Ericsson</name>
     <description>Walkman</description>
     <price>
       <currency>£</currency>
       <amount>199.00</amount>
+    </price>
+  </product>
+
+  <product id="12355">
+    <name>Apple Inc</name>
+    <description>iPhone</description>
+    <price>
+      <currency>£</currency>
+      <amount>300.00</amount>
+    </price>
+    <contract min="3" max="12" durationtype="month">
+      <option>Lost and stolen insurance</option>
+      <option>Free replacement if damaged</option>
+    </contract>
+  </product>
+
+  <product id="12355">
+    <name>Apple Inc</name>
+    <description>iPad</description>
+    <price>
+      <currency>£</currency>
+      <amount>300.00</amount>
     </price>
   </product>
 </products>
