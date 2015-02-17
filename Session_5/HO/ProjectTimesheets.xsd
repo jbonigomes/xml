@@ -2,8 +2,7 @@
 <xs:schema
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   targetNamespace="http://www.w3schools.com"
-  elementFormDefault="qualified"
-  attributeFormDefault="qualified">
+  elementFormDefault="qualified">
 
   <xs:element name="timesheets">
     <xs:complexType>
@@ -12,11 +11,11 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element name="firstname" type="xs:string" />
-              <xs:element name="surname" type="xs:string" />
+              <xs:element name="surname"   type="xs:string" />
             </xs:sequence>
-            <attribute name="id" type="xs:string" />
-            <attribute name="ismanager" type="xs:string" />
-            <attribute name="hiredate" type="xs:string" />
+            <xs:attribute name="id"        type="xs:string" />
+            <xs:attribute name="ismanager" type="xs:string" />
+            <xs:attribute name="hiredate"  type="xs:string" />
           </xs:complexType>
         </xs:element>
         <xs:element name="projects">
@@ -30,19 +29,19 @@
                         <xs:sequence>
                           <xs:element name="description" type="xs:string" />
                           <xs:element name="duration">
-                            <complexType>
+                            <xs:complexType>
                               <xs:sequence>
                                 <xs:element name="planned" type="xs:string" />
-                                <xs:element name="actual" type="xs:string" />
+                                <xs:element name="actual"  type="xs:string" />
                               </xs:sequence>
-                              <attribute name="type" type="xs:string" />
-                            </complexType>
+                              <xs:attribute name="type" type="xs:string" />
+                            </xs:complexType>
                           </xs:element>
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
-                  <attribute name="code" type="xs:string" />
+                  <xs:attribute name="code" type="xs:string" />
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
