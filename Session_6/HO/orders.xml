@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="orders.css"?>
+
+<!DOCTYPE orders [
+
+  <!ELEMENT orders (header, item*, footer)>
+
+  <!ELEMENT header (th*)>
+  <!ELEMENT th (#PCDATA)>
+
+  <!ELEMENT item (name, unitPrice, quantity, price)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT unitPrice (#PCDATA)>
+  <!ELEMENT quantity (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+
+  <!ELEMENT footer (td*)>
+  <!ELEMENT td (#PCDATA)>
+
+  <!ATTLIST th align CDATA #IMPLIED>
+  <!ATTLIST td colspan CDATA #IMPLIED>
+
+  <!ENTITY pound "#x00A3">
+]>
+
+<orders>
+
+  <header>
+    <th>Item</th>
+    <th align="center">Unit Price</th>
+    <th align="center">Quantity</th>
+    <th align="center">Price</th>
+  </header>
+
+  <item>
+    <name>FRW2431 Blue Shirt</name>
+    <unitPrice>£77.00</unitPrice>
+    <quantity>1</quantity>
+    <price>£77.00</price>
+  </item>
+
+  <item>
+    <name>RWQR3 Wedding Hat</name>
+    <unitPrice>£14.00</unitPrice>
+    <quantity>2</quantity>
+    <price>£28.00</price>
+  </item>
+
+  <item>
+    <name>MLT 791 Twin Blanket</name>
+    <unitPrice>£57.00</unitPrice>
+    <quantity>1</quantity>
+    <price>£57.00</price>
+  </item>
+
+  <item>
+    <name>MLT 92 Pillow Slip/Multi</name>
+    <unitPrice>£20.00</unitPrice>
+    <quantity>2</quantity>
+    <price>£40.00</price>
+  </item>
+
+  <item>
+    <name>SSBK-R Sleeping Bag, Red</name>
+    <unitPrice>£50.00</unitPrice>
+    <quantity>1</quantity>
+    <price>£50.00</price>
+  </item>
+
+  <item>
+    <name>SSBK-N Sleeping Bag, Navy</name>
+    <unitPrice>£50.00</unitPrice>
+    <quantity>1</quantity>
+    <price>£50.00</price>
+  </item>
+
+  <footer>
+    <td colspan="3">Total</td>
+    <td>£302.00</td>
+  </footer>
+</orders>

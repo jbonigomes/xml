@@ -1,0 +1,61 @@
+
+orders {
+  margin: 50px;
+}
+
+orders > header,
+orders > item,
+orders > footer {
+  clear: both;
+  display: block;
+  overflow: hidden;
+}
+
+orders > header > th,
+orders > footer > td,
+orders > item > name,
+orders > item > unitPrice,
+orders > item > quantity,
+orders > item > price {
+  float: left;
+  margin: 5px;
+  padding: 5px;
+  display: block;
+}
+
+orders > header > th,
+orders > item > name {
+  width: 250px;
+}
+
+orders > item > unitPrice,
+orders > item > quantity,
+orders > item > price,
+orders > footer > td,
+orders > header > th[align="center"] {
+  width: 100px;
+}
+
+orders > footer > td[colspan="3"] {
+  width: 490px;
+}
+
+orders > footer > td {
+  text-align: right;
+}
+
+orders > item > unitPrice,
+orders > item > quantity,
+orders > item > price {
+  text-align: right;
+}
+
+orders > header > th[align="center"] {
+  text-align: center
+}
+
+orders > header > th,
+orders > footer > td {
+  color: #fff;
+  background: #000;
+}

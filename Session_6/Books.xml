@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="Books.css"?> 
+<!DOCTYPE root SYSTEM "Books.dtd">
+<root>
+    <book>
+        <title>SAMS Teach Yourself XML In 21 Days</title>
+        <publisher>SAMS</publisher>
+        <author>Steven Holzner</author>
+        <isbn>0672325764</isbn>
+        <price>28.99</price>
+    </book>
+</root>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<packets>
+    <packet code="PK1240">
+        <cut>Emerald</cut>
+        <colour>F</colour>
+        <clarity>Flawless</clarity>
+        <caratweight>1.00</caratweight>
+        <price>2550.00</price>
+    </packet>
+    <packet code="FR4587">
+        <cut>Princess</cut>
+        <colour>D</colour>
+        <clarity>Flawless</clarity>
+        <caratweight>15.00</caratweight>
+        <price>3000000.00</price>
+    </packet>
+</packets>

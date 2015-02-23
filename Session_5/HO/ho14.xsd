@@ -7,9 +7,9 @@
   <xs:element name="invoice">
     <xs:complexType>
       <xs:choice maxOccurs="unbounded">
-        <xs:element name="para" type="xs:string" />
-        <xs:element name="list" type="xs:string" />
-        <xs:element name="table" type="xs:string" />
+        <xs:element name="from" />
+        <xs:element name="to" />
+        <xs:element name="details" />
       </xs:choice>
     </xs:complexType>
   </xs:element>
