@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://www.w3schools.com"
+  elementFormDefault="qualified">
+
+  <xs:element name="invoice">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="para" type="xs:string" />
+        <xs:element name="list" type="xs:string" />
+        <xs:element name="table" type="xs:string" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
+
+
+
+
+
+
+
+  <from xmlns:from="http://www.test.com">
+    <from:company>b2b Software Magic Ltd</from:company>
+    <from:reference>MyNet201</from:reference>
+    <from:clientid>345533</from:clientid>
+    <from:date>11/11/2005</from:date>
+    <from:name>Paul White</from:name>
+    <from:phone>0207 634 6547</from:phone>
+  </from>
+
+  <to xmlns:to="http://www.dcs.bbk.ac.uk/itapps/xml/invoice/to">
+    <to:name>Mr Barny Hales</to:name>
+    <to:company>MyNetGlobix Plc</to:company>
+    <to:address>2 Caxton Street</to:address>
+    <to:city>London</to:city>
+    <to:postcode>SW1 H0QE</to:postcode>
+  </to>
+
+  <details xmlns:details="http://www.dcs.bbk.ac.uk/itapps/xml/invoice/details">
+    <details:description>
+      Golden number development version 1 (1 day)
+    </details:description>
+    <details:currency>&dollar;</details:currency>
+    <details:net>500.00</details:net>
+    <details:vat>
+      <details:percentage>17.5</details:percentage>
+      <details:amount>87.50</details:amount>
+    </details:vat>
+    <details:total>587.50</details:total>
+  </details>
+
+

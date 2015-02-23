@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE invoice [
+
+  <!ELEMENT invoice (from, to, details)>
+  <!ATTLIST invoice xmlns CDATA #REQUIRED>
+
+  <!ENTITY dollar "#x0024">
+  <!ENTITY pound "#x00A3">
+  <!ENTITY euro "#x20AC">
+
+  <!ELEMENT from (from:company, from:reference, from:clientid, from:date, from:name, from:phone)>
+  <!ATTLIST from xmlns:from CDATA #REQUIRED>
+  <!ELEMENT from:company (#PCDATA)>
+  <!ELEMENT from:reference (#PCDATA)>
+  <!ELEMENT from:clientid (#PCDATA)>
+  <!ELEMENT from:date (#PCDATA)>
+  <!ELEMENT from:name (#PCDATA)>
+  <!ELEMENT from:phone (#PCDATA)>
+
+  <!ELEMENT to (to:name, to:company, to:address, to:city, to:postcode)>
+  <!ATTLIST to xmlns:to CDATA #REQUIRED>
+  <!ELEMENT to:name (#PCDATA)>
+  <!ELEMENT to:company (#PCDATA)>
+  <!ELEMENT to:address (#PCDATA)>
+  <!ELEMENT to:city (#PCDATA)>
+  <!ELEMENT to:postcode (#PCDATA)>
+
+  <!ELEMENT details (details:description, details:currency, details:net, details:vat, details:total)>
+  <!ATTLIST details xmlns:details CDATA #REQUIRED>
+  <!ELEMENT details:description (#PCDATA)>
+  <!ELEMENT details:currency (#PCDATA)>
+  <!ELEMENT details:net (#PCDATA)>
+  <!ELEMENT details:vat (details:percentage, details:amount)>
+  <!ELEMENT details:percentage (#PCDATA)>
+  <!ELEMENT details:amount (#PCDATA)>
+  <!ELEMENT details:total (#PCDATA)>
+
+]>
+
+<invoice xmlns="http://www.dcs.bbk.ac.uk/itapps/xml/invoice">
+
+  <from xmlns:from="http://www.test.com">
+    <from:company>b2b Software Magic Ltd</from:company>
+    <from:reference>MyNet201</from:reference>
+    <from:clientid>345533</from:clientid>
+    <from:date>11/11/2005</from:date>
+    <from:name>Paul White</from:name>
+    <from:phone>0207 634 6547</from:phone>
+  </from>
+
+  <to xmlns:to="http://www.dcs.bbk.ac.uk/itapps/xml/invoice/to">
+    <to:name>Mr Barny Hales</to:name>
+    <to:company>MyNetGlobix Plc</to:company>
+    <to:address>2 Caxton Street</to:address>
+    <to:city>London</to:city>
+    <to:postcode>SW1 H0QE</to:postcode>
+  </to>
+
+  <details xmlns:details="http://www.dcs.bbk.ac.uk/itapps/xml/invoice/details">
+    <details:description>
+      Golden number development version 1 (1 day)
+    </details:description>
+    <details:currency>&dollar;</details:currency>
+    <details:net>500.00</details:net>
+    <details:vat>
+      <details:percentage>17.5</details:percentage>
+      <details:amount>87.50</details:amount>
+    </details:vat>
+    <details:total>587.50</details:total>
+  </details>
+
+</invoice>
