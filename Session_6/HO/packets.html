@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+
+      function loadXMLDoc(dname)
+      {
+        xhttp = new XMLHttpRequest();
+
+        xhttp.open('GET', dname, false);
+        xhttp.send('');
+
+        return xhttp;
+      }
+
+      function loopResults(title, result)
+      {
+        document.write('<h1>' + title + '</h1>');
+
+        while(result)
+        {
+          document.write(result.childNodes[0].nodeValue);
+          document.write('<br>');
+
+          result = nodes.iterateNext();
+        }
+      }
+
+      var x   = loadXMLDoc('packets.xml');
+      var xml = x.responseXML;
+
+      // Exercise a
+      var path   = '/packets/packet[cut="Emerald"]/cut';
+      var nodes  = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+      var result = nodes.iterateNext();
+
+      loopResults('Question A', result);
+
+      // Exercise b
+      var path   = '/packets/packet/colour';
+      var nodes  = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+      var result = nodes.iterateNext();
+
+      loopResults('Question B', result);
+
+      // Exercise c
+      var path   = '/packets/packet[price>1000000]/price';
+      var nodes  = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+      var result = nodes.iterateNext();
+
+      loopResults('Question C', result);
+
+      // Exercise d
+      var path   = '/packets/packet[@code="PK1240"]/cut';
+      var nodes  = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+      var result = nodes.iterateNext();
+
+      loopResults('Question D', result);
+
+      // Exercise E
+      var path   = '/packets/packet/@code';
+      var nodes  = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+      var result = nodes.iterateNext();
+
+      loopResults('Question E', result);
+
+    </script>
+  </body>
+</html>

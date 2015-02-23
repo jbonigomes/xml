@@ -7,9 +7,26 @@
         <caratweight>1.00</caratweight>
         <price>2550.00</price>
     </packet>
+
     <packet code="FR4587">
         <cut>Princess</cut>
         <colour>D</colour>
+        <clarity>Flawless</clarity>
+        <caratweight>15.00</caratweight>
+        <price>2000000.00</price>
+    </packet>
+
+    <packet code="FR4588">
+        <cut>Emerald</cut>
+        <colour>E</colour>
+        <clarity>Flawless</clarity>
+        <caratweight>15.00</caratweight>
+        <price>40000.00</price>
+    </packet>
+
+    <packet code="FR4589">
+        <cut>Princess</cut>
+        <colour>C</colour>
         <clarity>Flawless</clarity>
         <caratweight>15.00</caratweight>
         <price>3000000.00</price>
