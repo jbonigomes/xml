@@ -1,0 +1,14 @@
+.header 
+{
+	background-color: #9acd32;
+} 
+
+table, tr, th, td
+{ 
+	border: 1px solid black;
+}
+
+th
+{
+	text-align: left;
+}
