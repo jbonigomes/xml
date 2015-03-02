@@ -1,0 +1,39 @@
+body {
+  font-family: arial;
+}
+
+h1 {
+  color: #bcf;
+  text-align: center;
+}
+
+.wrapper {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px 0;
+  overflow: hidden;
+  border-bottom: 1px solid #bcf;
+}
+
+.left {
+  width: 75%;
+  float: left;
+}
+
+.right {
+  width: 25%;
+  float: left;
+}
+
+.title {
+  color: #bcf;
+}
+
+.listPrice span {
+  font-weight: bold;
+  text-decoration: line-through;
+}
+
+.price {
+  color: #f00;
+}

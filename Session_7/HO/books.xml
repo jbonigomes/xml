@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="books.xsl"?>
+<books>
+  <book>
+    <title>Structure and Interpretation of Computer Programs</title>
+    <author>Gerald Jay Sussman and Hal Abelson</author>
+    <listPrice>70</listPrice>
+    <price>60</price>
+    <review>5/5</review>
+    <publisher>MIT</publisher>
+  </book>
+  <book>
+    <title>The Art of Computer Programming</title>
+    <author>Donald Knuth</author>
+    <listPrice>50</listPrice>
+    <price>40</price>
+    <review>5/5</review>
+    <publisher>Addison Wesley</publisher>
+  </book>
+  <book>
+    <title>Design Patterns: Elements of Reusable Object-Oriented Software</title>
+    <author>Erich Gamma, John Vlissides, Ralph Johnson, and Richard Helm</author>
+    <listPrice>30</listPrice>
+    <price>20</price>
+    <review>5/5</review>
+    <publisher>Addison Wesley</publisher>
+  </book>
+  <book>
+    <title>Operating Systems Design and Implementation</title>
+    <author>Andrew S. Tanenbaum</author>
+    <listPrice>90</listPrice>
+    <price>80</price>
+    <review>5/5</review>
+    <publisher>Prentice-Hall</publisher>
+  </book>
+</books>

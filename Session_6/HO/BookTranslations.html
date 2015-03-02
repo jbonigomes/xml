@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+
+      function loadXMLDoc(dname)
+      {
+        xhttp = new XMLHttpRequest();
+
+        xhttp.open('GET', dname, false);
+        xhttp.send('');
+
+        return xhttp;
+      }
+
+      function loopResults(title, result)
+      {
+        document.write('<h1>' + title + '</h1>');
+
+        while(result)
+        {
+          document.write(result.childNodes[0].nodeValue);
+          document.write('<br>');
+
+          result = nodes.iterateNext();
+        }
+      }
+
+      var x   = loadXMLDoc('BookTranslations.xml');
+      var xml = x.responseXML;
+
+      // Exercise a
+      var path   = '/books/book[translation="Japanese"]/title';
+      var nodes  = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+      var result = nodes.iterateNext();
+
+      loopResults('Question A', result);
+
+      // Exercise b
+      var path   = '/books/book[translation="Spanish"]/title';
+      var nodes  = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+      var result = nodes.iterateNext();
+
+      loopResults('Question B', result);
+
+      // Exercise c
+      var path   = '/books/book/translation';
+      var nodes  = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+      var result = nodes.iterateNext();
+
+      loopResults('Question B', result);
+    </script>
+  </body>
+</html>
