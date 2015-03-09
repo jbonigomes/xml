@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="namedtemplate.xsl" ?>
+<chapter>
+
+    <warning>
+        <para>Using a damaged extension cord may cause a fire.</para>
+    </warning>
+
+    <caution>
+        <para>Freshly brewed coffee is hot.</para>
+    </caution>
+</chapter>

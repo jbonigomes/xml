@@ -1,0 +1,12 @@
+.warning
+{
+    color: #ff0000;
+    font-weight: bold;
+    padding: 1em;
+    outline: 1px solid #aaaaaa;
+}
+
+.caution
+{
+    color: #aa4444;
+}
