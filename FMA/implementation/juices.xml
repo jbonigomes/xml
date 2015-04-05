@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="juices.xsl"?>
+
+<!-- <juices xmlns="http://titan.dcs.bbk.ac.uk/~jgomes01/xmlfma"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://titan.dcs.bbk.ac.uk/~jgomes01/xmlfma juices.xsd"> -->
+
+<juices>
+
+  <type id="1">
+    <title>Fruit Juices</title>
+    <filename>fruitjuices</filename>
+    <juice id="1">
+      <name>Mango Tango</name>
+      <description>
+        Bursting with an unbelievable mango flavour this juice will wake even
+        the most tired sleeper from their slumbers. Mango Tango is packed with
+        vitamins.
+      </description>
+      <ingredients>
+        <ingredient>Mango</ingredient>
+        <ingredient>Colorant</ingredient>
+        <ingredient>Water</ingredient>
+        <ingredient>Caffeine</ingredient>
+        <ingredient>Sugar</ingredient>
+      </ingredients>
+      <information>
+        <blend>Mango</blend>
+        <concentrate>No</concentrate>
+        <vitamins>
+          <vitamin>A</vitamin>
+          <vitamin>B</vitamin>
+          <vitamin>C</vitamin>
+        </vitamins>
+      </information>
+      <nutricional>
+        <kj>250</kj>
+        <kcal>65</kcal>
+        <carbohydrate>16</carbohydrate>
+        <sugars>14</sugars>
+        <salt>1</salt>
+      </nutricional>
+      <price>10</price>
+    </juice>
+
+    <juice id="2">
+      <name>Strawberry Larry</name>
+      <description>
+        Bursting with an unbelievable strawberry flavour this juice will wake
+        even the most tired sleeper from their slumbers. Strawberry Larry is
+        packed with vitamins.
+      </description>
+      <ingredients>
+        <ingredient>Strawberry</ingredient>
+        <ingredient>Colorant</ingredient>
+        <ingredient>Water</ingredient>
+        <ingredient>Caffeine</ingredient>
+        <ingredient>Sugar</ingredient>
+      </ingredients>
+      <information>
+        <blend>Strawberry</blend>
+        <concentrate>Yes</concentrate>
+        <vitamins>
+          <vitamin>A</vitamin>
+          <vitamin>B</vitamin>
+          <vitamin>C</vitamin>
+        </vitamins>
+      </information>
+      <nutricional>
+        <kj>250</kj>
+        <kcal>65</kcal>
+        <carbohydrate>16</carbohydrate>
+        <sugars>14</sugars>
+        <salt>0.5</salt>
+      </nutricional>
+      <price>12</price>
+    </juice>
+
+    <juice id="3">
+      <name>Orange Memorange</name>
+      <description>
+        Bursting with an unbelievable orange flavour this juice will wake even
+        the most tired sleeper from their slumbers. Orange Memorange is packed
+        with vitamins.
+      </description>
+      <ingredients>
+        <ingredient>Orange</ingredient>
+        <ingredient>Colorant</ingredient>
+        <ingredient>Water</ingredient>
+        <ingredient>Caffeine</ingredient>
+        <ingredient>Sugar</ingredient>
+      </ingredients>
+      <information>
+        <blend>Orange</blend>
+        <concentrate>No</concentrate>
+        <vitamins>
+          <vitamin>A</vitamin>
+          <vitamin>B</vitamin>
+          <vitamin>C</vitamin>
+        </vitamins>
+      </information>
+      <nutricional>
+        <kj>250</kj>
+        <kcal>65</kcal>
+        <carbohydrate>16</carbohydrate>
+        <sugars>14</sugars>
+        <salt>0</salt>
+      </nutricional>
+      <price>14</price>
+    </juice>
+  </type>
+
+  <type id="2">
+    <title>Berry Juices</title>
+    <filename>berryjuices</filename>
+    <juice id="4">
+      <name>Lemon Cannon</name>
+      <description>
+        Bursting with an unbelievable lemon flavour this juice will wake even
+        the most tired sleeper from their slumbers. Lemon Cannon is packed with
+        vitamins.
+      </description>
+      <ingredients>
+        <ingredient>Lemon</ingredient>
+        <ingredient>Colorant</ingredient>
+        <ingredient>Water</ingredient>
+        <ingredient>Caffeine</ingredient>
+        <ingredient>Sugar</ingredient>
+      </ingredients>
+      <information>
+        <blend>Lemon</blend>
+        <concentrate>Yes</concentrate>
+        <vitamins>
+          <vitamin>A</vitamin>
+          <vitamin>B</vitamin>
+          <vitamin>C</vitamin>
+        </vitamins>
+      </information>
+      <nutricional>
+        <kj>250</kj>
+        <kcal>65</kcal>
+        <carbohydrate>16</carbohydrate>
+        <sugars>14</sugars>
+        <salt>1</salt>
+      </nutricional>
+      <price>10</price>
+    </juice>
+
+    <juice id="5">
+      <name>Pomegranate Grenade</name>
+      <description>
+        Bursting with an unbelievable pomegranate flavour this juice will wake
+        even the most tired sleeper from their slumbers. Pomegranate Grenade is
+        packed with vitamins.
+      </description>
+      <ingredients>
+        <ingredient>Pomegranate</ingredient>
+        <ingredient>Colorant</ingredient>
+        <ingredient>Water</ingredient>
+        <ingredient>Caffeine</ingredient>
+        <ingredient>Sugar</ingredient>
+      </ingredients>
+      <information>
+        <blend>Pomegranate</blend>
+        <concentrate>No</concentrate>
+        <vitamins>
+          <vitamin>A</vitamin>
+          <vitamin>B</vitamin>
+          <vitamin>C</vitamin>
+        </vitamins>
+      </information>
+      <nutricional>
+        <kj>250</kj>
+        <kcal>65</kcal>
+        <carbohydrate>16</carbohydrate>
+        <sugars>14</sugars>
+        <salt>0.5</salt>
+      </nutricional>
+      <price>12</price>
+    </juice>
+
+    <juice id="6">
+      <name>Kiwi Mewe</name>
+      <description>
+        Bursting with an unbelievable kiwi fruit flavour this juice will wake
+        even the most tired sleeper from their slumbers. Kiwi Mewe is packed
+        with vitamins.
+      </description>
+      <ingredients>
+        <ingredient>Kiwi</ingredient>
+        <ingredient>Colorant</ingredient>
+        <ingredient>Water</ingredient>
+        <ingredient>Caffeine</ingredient>
+        <ingredient>Sugar</ingredient>
+      </ingredients>
+      <information>
+        <blend>Kiwi</blend>
+        <concentrate>Yes</concentrate>
+        <vitamins>
+          <vitamin>A</vitamin>
+          <vitamin>B</vitamin>
+          <vitamin>C</vitamin>
+        </vitamins>
+      </information>
+      <nutricional>
+        <kj>250</kj>
+        <kcal>65</kcal>
+        <carbohydrate>16</carbohydrate>
+        <sugars>14</sugars>
+        <salt>0</salt>
+      </nutricional>
+      <price>14</price>
+    </juice>
+  </type>
+
+  <type id="3">
+    <title>Vegetable Juices</title>
+    <filename>vegetablejuices</filename>
+    <juice id="7">
+      <name>Satsuma Puma</name>
+      <description>
+        Bursting with an unbelievable satsuma flavour this juice will wake even
+        the most tired sleeper from their slumbers. Satsuma Puma is packed with
+        vitamins.
+      </description>
+      <ingredients>
+        <ingredient>Satsuma</ingredient>
+        <ingredient>Colorant</ingredient>
+        <ingredient>Water</ingredient>
+        <ingredient>Caffeine</ingredient>
+        <ingredient>Sugar</ingredient>
+      </ingredients>
+      <information>
+        <blend>Satsuma</blend>
+        <concentrate>No</concentrate>
+        <vitamins>
+          <vitamin>A</vitamin>
+          <vitamin>B</vitamin>
+          <vitamin>C</vitamin>
+        </vitamins>
+      </information>
+      <nutricional>
+        <kj>250</kj>
+        <kcal>65</kcal>
+        <carbohydrate>16</carbohydrate>
+        <sugars>14</sugars>
+        <salt>1</salt>
+      </nutricional>
+      <price>10</price>
+    </juice>
+
+    <juice id="8">
+      <name>Passion Fashion</name>
+      <description>
+        Bursting with an unbelievable passion fruit flavour this juice will wake
+        even the most tired sleeper from their slumbers. Passion  Fashion is
+        packed with vitamins.
+      </description>
+      <ingredients>
+        <ingredient>Passion fruit</ingredient>
+        <ingredient>Colorant</ingredient>
+        <ingredient>Water</ingredient>
+        <ingredient>Caffeine</ingredient>
+        <ingredient>Sugar</ingredient>
+      </ingredients>
+      <information>
+        <blend>Passion fruit</blend>
+        <concentrate>Yes</concentrate>
+        <vitamins>
+          <vitamin>A</vitamin>
+          <vitamin>B</vitamin>
+          <vitamin>C</vitamin>
+        </vitamins>
+      </information>
+      <nutricional>
+        <kj>250</kj>
+        <kcal>65</kcal>
+        <carbohydrate>16</carbohydrate>
+        <sugars>14</sugars>
+        <salt>0.5</salt>
+      </nutricional>
+      <price>12</price>
+    </juice>
+
+    <juice id="9">
+      <name>Red Apple</name>
+      <description>
+        Bursting with an unbelievable red apple flavour this juice will wake
+        even the most tired sleeper from their slumbers. Red Apple is packed
+        with vitamins.
+      </description>
+      <ingredients>
+        <ingredient>Red apple</ingredient>
+        <ingredient>Colorant</ingredient>
+        <ingredient>Water</ingredient>
+        <ingredient>Caffeine</ingredient>
+        <ingredient>Sugar</ingredient>
+      </ingredients>
+      <information>
+        <blend>Red apple</blend>
+        <concentrate>No</concentrate>
+        <vitamins>
+          <vitamin>A</vitamin>
+          <vitamin>B</vitamin>
+          <vitamin>C</vitamin>
+        </vitamins>
+      </information>
+      <nutricional>
+        <kj>250</kj>
+        <kcal>65</kcal>
+        <carbohydrate>16</carbohydrate>
+        <sugars>14</sugars>
+        <salt>0</salt>
+      </nutricional>
+      <price>14</price>
+    </juice>
+  </type>
+
+  <type id="4">
+    <title>Health Juices</title>
+    <filename>healthjuices</filename>
+    <juice id="10">
+      <name>Green Apple</name>
+      <description>
+        Bursting with an unbelievable green apple flavour this juice will wake
+        even the most tired sleeper from their slumbers. Green Apple is
+        packed with vitamins.
+      </description>
+      <ingredients>
+        <ingredient>Green apple</ingredient>
+        <ingredient>Colorant</ingredient>
+        <ingredient>Water</ingredient>
+        <ingredient>Caffeine</ingredient>
+        <ingredient>Sugar</ingredient>
+      </ingredients>
+      <information>
+        <blend>Green apple</blend>
+        <concentrate>Yes</concentrate>
+        <vitamins>
+          <vitamin>A</vitamin>
+          <vitamin>B</vitamin>
+          <vitamin>C</vitamin>
+        </vitamins>
+      </information>
+      <nutricional>
+        <kj>250</kj>
+        <kcal>65</kcal>
+        <carbohydrate>16</carbohydrate>
+        <sugars>14</sugars>
+        <salt>1</salt>
+      </nutricional>
+      <price>10</price>
+    </juice>
+
+    <juice id="11">
+      <name>Tangerine Queen</name>
+      <description>
+        Bursting with an unbelievable tangerine flavour this juice will wake
+        even the most tired sleeper from their slumbers. Tangerine Queen is
+        packed with vitamins.
+      </description>
+      <ingredients>
+        <ingredient>Tangerine</ingredient>
+        <ingredient>Colorant</ingredient>
+        <ingredient>Water</ingredient>
+        <ingredient>Caffeine</ingredient>
+        <ingredient>Sugar</ingredient>
+      </ingredients>
+      <information>
+        <blend>Tangerine</blend>
+        <concentrate>No</concentrate>
+        <vitamins>
+          <vitamin>A</vitamin>
+          <vitamin>B</vitamin>
+          <vitamin>C</vitamin>
+        </vitamins>
+      </information>
+      <nutricional>
+        <kj>250</kj>
+        <kcal>65</kcal>
+        <carbohydrate>16</carbohydrate>
+        <sugars>14</sugars>
+        <salt>0.5</salt>
+      </nutricional>
+      <price>12</price>
+    </juice>
+
+    <juice id="12">
+      <name>Pineapple Snapple</name>
+      <description>
+        Bursting with an unbelievable pineapple flavour this juice will wake
+        even the most tired sleeper from their slumbers. Pineapple Snapple is
+        packed with vitamins.
+      </description>
+      <ingredients>
+        <ingredient>Pineapple</ingredient>
+        <ingredient>Colorant</ingredient>
+        <ingredient>Water</ingredient>
+        <ingredient>Caffeine</ingredient>
+        <ingredient>Sugar</ingredient>
+      </ingredients>
+      <information>
+        <blend>Pineapple</blend>
+        <concentrate>Yes</concentrate>
+        <vitamins>
+          <vitamin>A</vitamin>
+          <vitamin>B</vitamin>
+          <vitamin>C</vitamin>
+        </vitamins>
+      </information>
+      <nutricional>
+        <kj>250</kj>
+        <kcal>65</kcal>
+        <carbohydrate>16</carbohydrate>
+        <sugars>14</sugars>
+        <salt>0</salt>
+      </nutricional>
+      <price>14</price>
+    </juice>
+  </type>
+
+  <type id="5">
+    <title>Slimming Juices</title>
+    <filename>slimmingjuices</filename>
+    <juice id="13">
+      <name>Mandarin Hammering</name>
+      <description>
+        Bursting with an unbelievable mandarin flavour this juice will wake even
+        the most tired sleeper from their slumbers. Mandarin Hammering is packed
+        with vitamins.
+      </description>
+      <ingredients>
+        <ingredient>Mandarin</ingredient>
+        <ingredient>Colorant</ingredient>
+        <ingredient>Water</ingredient>
+        <ingredient>Caffeine</ingredient>
+        <ingredient>Sugar</ingredient>
+      </ingredients>
+      <information>
+        <blend>Mandarin</blend>
+        <concentrate>No</concentrate>
+        <vitamins>
+          <vitamin>A</vitamin>
+          <vitamin>B</vitamin>
+          <vitamin>C</vitamin>
+        </vitamins>
+      </information>
+      <nutricional>
+        <kj>250</kj>
+        <kcal>65</kcal>
+        <carbohydrate>16</carbohydrate>
+        <sugars>14</sugars>
+        <salt>1</salt>
+      </nutricional>
+      <price>10</price>
+    </juice>
+
+    <juice id="14">
+      <name>Avocado Collado</name>
+      <description>
+        Bursting with an unbelievable avocado flavour this juice will wake even
+        the most tired sleeper from their slumbers. Avocado Collado is packed
+        with vitamins.
+      </description>
+      <ingredients>
+        <ingredient>Avocado</ingredient>
+        <ingredient>Colorant</ingredient>
+        <ingredient>Water</ingredient>
+        <ingredient>Caffeine</ingredient>
+        <ingredient>Sugar</ingredient>
+      </ingredients>
+      <information>
+        <blend>Avocado</blend>
+        <concentrate>Yes</concentrate>
+        <vitamins>
+          <vitamin>A</vitamin>
+          <vitamin>B</vitamin>
+          <vitamin>C</vitamin>
+        </vitamins>
+      </information>
+      <nutricional>
+        <kj>250</kj>
+        <kcal>65</kcal>
+        <carbohydrate>16</carbohydrate>
+        <sugars>14</sugars>
+        <salt>0.5</salt>
+      </nutricional>
+      <price>12</price>
+    </juice>
+
+    <juice id="15">
+      <name>Papaya Playa</name>
+      <description>
+        Bursting with an unbelievable papaya flavour this juice will wake even
+        the most tired sleeper from their slumbers. Papaya Playa is packed with
+        vitamins.
+      </description>
+      <ingredients>
+        <ingredient>Papaya</ingredient>
+        <ingredient>Colorant</ingredient>
+        <ingredient>Water</ingredient>
+        <ingredient>Caffeine</ingredient>
+        <ingredient>Sugar</ingredient>
+      </ingredients>
+      <information>
+        <blend>Papaya</blend>
+        <concentrate>No</concentrate>
+        <vitamins>
+          <vitamin>A</vitamin>
+          <vitamin>B</vitamin>
+          <vitamin>C</vitamin>
+        </vitamins>
+      </information>
+      <nutricional>
+        <kj>250</kj>
+        <kcal>65</kcal>
+        <carbohydrate>16</carbohydrate>
+        <sugars>14</sugars>
+        <salt>0</salt>
+      </nutricional>
+      <price>14</price>
+    </juice>
+  </type>
+
+</juices>
