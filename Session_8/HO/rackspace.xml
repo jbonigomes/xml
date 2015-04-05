@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="rackspace.xsl" ?>
+
+<invoices>
+  
+  <invoice>
+    <date></date>
+    <device>
+      <name></name>
+      <description></description>
+      <cost></cost>
+    </device>
+  </invoice>
+
+</invoices>
+
+
+
+load-balancer,
+a firewall,
+web server
+web server
+web server
+web server
+clustered database server with 5 TB of SAN disk space
+
+
+
+Header: Date and Month of Invoice
+–  Body: Device Name, Device Description, Monthly Cost of devices.
+For example: Web Server, 4 Web servers for 24/7 resilience and scalability, £28, 000 (This amount would be calculated in the XSLT as 4 * £7, 000 if each server costs £7, 000).
+–  Footer: Total of monthly costs, VAT, Grand Total
