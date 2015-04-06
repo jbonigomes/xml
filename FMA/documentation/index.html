@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>XML FMA</title>
+
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wkhtmltopdfcontainer">
+		<div class="container">
+			<ul class="signature">
+				<li><b>Name:</b> Jose B. Gomes</li>
+				<li><b>Tutor:</b> Muawya Elday</li>
+				<li><b>ID:</b> 12500741</li>
+			</ul>
+
+			<h1>XML FMA - 2014/2015</h1>
+			<h2>Birkbeck University of London</h2>
+
+			<h3>Intro</h3>
+
+			<p>
+				This is the documentation for the 2014/2015 Birkbeck University of
+				London FMA (Final Marked Assignment).
+			</p>
+
+			<p>The webpage for this assignment can be found at:</p>
+
+			<p>
+				<a href="http://titan.dcs.bbk.ac.uk/~jgomes01/xmfma">
+					http://titan.dcs.bbk.ac.uk/~jgomes01/xmfma
+				</a>
+			</p>
+
+			<p>The complete github repository for this module can be found at:</p>
+
+			<p>
+				<a href="https://github.com/jbonigomes/xml">
+					https://github.com/jbonigomes/xml
+				</a>
+			</p>
+
+			<h3>The validation</h3>
+
+			<p>
+				The picture below illustrates that the files provided for this
+				assignment are well formed and have passed both DTD and Schema
+				validations.
+			</p>
+
+			<p><img src="img/valid.png"></p>
+		</div>
+	</div>
+
+	<div class="wkhtmltopdfcontainer">
+		<div class="container">
+			<h3>The XML design</h3>
+
+			<p>
+				The task for this assignment involved creating a juices catalogue that
+				captures juices information in an XML format. The XML file must contain
+				at least 10 different contacts and should capture at the very least the
+				following information:
+			</p>
+
+			<ul>
+				<li>The product name, that is, the name of the juice.</li>
+				<li>The ingredients for the given product.</li>
+				<li>
+					Juices and fruit information for the given product, that is, it must
+					fullfill the following sub-categories:
+					<ul>
+						<li>Blend</li>
+						<li>Concentrate</li>
+						<li>A list of Vitamins present in the product</li>
+					</ul>
+				</li>
+				<li>
+					Nutricional values for the given product, that is, it must fullfill
+					the following sub-categories:
+					<ul>
+						<li>Energy (kJ)</li>
+						<li>Energy (kcal)</li>
+						<li>Carbohydrate (g)</li>
+						<li>of which Sugars (g)</li>
+						<li>Salt (g)</li>
+					</ul>
+				</li>
+				<li>And the price</li>
+			</ul>
+
+			<p>
+				First and foremost, in addition to the items mentioned above, the final
+				XML document also features the following elements:
+			</p>
+
+			<ul>
+				<li>
+					<b>juices:</b> a container acting as the root element for the XML
+					structure.
+				</li>
+				<li>
+					<b>type:</b> a repeatable container that holds all the information
+					for a group of juices, this element also features a unique id in order
+					to make it easy to identify within the application implementation.
+				</li>
+				<li>
+					<b>juice:</b> although not explicitly mentioned in the assignment,
+					this container is mandatory in order to hold the details for a single
+					product. In addition, this element also features an unique id, so that
+					pictures uploaded into the website can link back to each product.
+				</li>
+				<li>
+					<b>description:</b> this was added in order to add a more friendly
+					description for each product.
+				</li>
+			</ul>
+
+			<p>
+				The structure of the XML was implemented with the fact that users can
+				add as many ingredients to a product as they wish, therefore, the
+				structure for ingredients has been declared as a complex type with an 
+				unbounded amount of ingredient elements. Likewise, the vitamins element
+				follows the same structure. 
+			</p>
+
+			<p>
+				The datatype used to validate most elements was token, this was decided
+				for two reasons, most entries were textual and it removes leading and
+				trailing spaces. The price field received a decimal datatype with a
+				restriction of 2 fraction digits. All the other numeric entries were
+				declared as integers. The following Stack Overflow post was used as a
+				base for this declaration:
+			</p>
+
+			<p>
+				<a href="http://stackoverflow.com/questions/6454256">
+					http://stackoverflow.com/questions/6454256
+				</a>
+			</p>
+
+			<p>
+				The only other restriction added was to the concentrate element, since
+				the value may only either be 'Yes' or 'No', the following W3C schools
+				article was used as a base for this declaration:
+			</p>
+
+			<p>
+				<a href="http://www.w3schools.com/schema/schema_facets.asp">
+					http://www.w3schools.com/schema/schema_facets.asp
+				</a>
+			</p>
+
+			<p>
+				The final business rule to be met, was to ensure that the ids for both
+				'juice' and 'type' were kept unique, the following Stack Overflow post
+				has served as a based for those declarations:
+			</p>
+
+			<p>
+				<a href="http://stackoverflow.com/questions/3387133">
+					http://stackoverflow.com/questions/3387133
+				</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="wkhtmltopdfcontainer">
+		<div class="container">
+			<h3>The XML transformation</h3>
+
+			<p>
+				This assignment required an implementation of an XSLT transformation of
+				the XML into HTML, so that it could be presented as a web page.
+			</p>
+
+			<p>
+				This was achieved based on the initial files given for the assignment,
+				two pages were removed and merged into one, the fruitjuces.html and the
+				juices.html. The latter is simply an information page and the former has
+				been replaced with the dynamic XML content.
+			</p>
+
+			<p>
+				To achieve it, an XSLT file was created, the XML links to this file and
+				when accessed via a web brower, the transformation occurs.
+			</p>
+
+			<p>
+				In addition to the 10 mandatory juices required, the implementation
+				created another 5 juices, so that each juice type can now have 3
+				products for better demonstration of the capabilities of the final
+				outcome.
+			</p>
+
+			<p>
+				Since there is only one XML file, some JavaScript had to be implemented
+				in order to create the illusion that the juices page consists of many
+				sub pages grouped by their types.
+			</p>
+
+			<p>
+				What the JavaScript file does is rather simple, the DOM contains many
+				right columns, that are hidden by default, except the first one, when
+				the page loads. Since the first right column is simply a static
+				introduction which is not related to any juice type, the left navigation
+				is left without any 'current page' indication. What it then does is
+				simply listen to click events in each of the links in the left
+				navigation, when they are clicked, it ensures the right clicked element
+				highlights as the current page and displays the relevant right column
+				content.
+			</p>
+
+			<p>
+				The screenshots below illustrate how the final implemention outputs the
+				XML content:
+			</p>
+
+			<p>
+				<b>The landing page view:</b>
+				<img src="img/landing.png">
+			</p>
+		</div>
+	</div>
+
+	<div class="wkhtmltopdfcontainer">
+		<div class="container">
+			<p>
+				<b>The Fruit Juices view:</b>
+				<img src="img/fruitjuices.png">
+			</p>
+		</div>
+	</div>
+
+	<div class="wkhtmltopdfcontainer">
+		<div class="container">
+			<p>
+				<b>The Berry Juices view:</b>
+				<img src="img/berryjuices.png">
+			</p>
+		</div>
+	</div>
+
+	<div class="wkhtmltopdfcontainer">
+		<div class="container">
+			<p>
+				<b>The Vegetable Juices view:</b>
+				<img src="img/vegetablejuices.png">
+			</p>
+		</div>
+	</div>
+
+	<div class="wkhtmltopdfcontainer">
+		<div class="container">
+			<p>
+				<b>The Health Juices view:</b>
+				<img src="img/healthjuices.png">
+			</p>
+		</div>
+	</div>
+
+	<div class="wkhtmltopdfcontainer">
+		<div class="container">
+			<p>
+				<b>The Slimming Juices view:</b>
+				<img src="img/slimmingjuices.png">
+			</p>
+		</div>
+	</div>
+
+	<div class="wkhtmltopdfcontainer">
+		<div class="container">
+			<h3>Problems encountered</h3>
+
+			<p>
+				Although this assignment is rather simplistic, the final outcome of the
+				XML document does not make any use of namespaces, the reason behind this
+				decision comes from the fact that I could not get the XML Schema to
+				validate an XML namespaced tag. To overcome this problem, the element
+				which contains the name of a type has been renamed from 'name' to
+				'title', this way, the element name for a juice could be kept as 'name'.
+			</p>
+
+			<p>
+				For the JavaScript to display the correct pages, an unique id attribute
+				had to be added to the XML Schema, this id is referenced in two places,
+				in the XSLT file, once as a data attribute for the left navigation links
+				and once as part of the id of each dynamic right column content, so that
+				the correct ones can be displayed.
+			</p>
+
+			<p>
+				The following Stack Overflow post has helped me with concatenating
+				values in an XSL attribute:
+			</p>
+
+			<p>
+				<a href="http://stackoverflow.com/questions/10395488">
+					http://stackoverflow.com/questions/10395488
+				</a>
+			</p>
+		</div>
+	</div>
+
+	<!-- JavaScript -->
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
+	<!-- /JavaScript -->
+</body>
+</html>
