@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="juices.xsl"?>
 
-<!-- <juices xmlns="http://titan.dcs.bbk.ac.uk/~jgomes01/xmlfma"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://titan.dcs.bbk.ac.uk/~jgomes01/xmlfma juices.xsd"> -->
+<!DOCTYPE juices []>
 
-<juices>
+<juices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://titan.dcs.bbk.ac.uk/~jgomes01/xmfma juices.xsd">
+
   <type id="1">
     <title>Fruit Juices</title>
     <juice id="1">
