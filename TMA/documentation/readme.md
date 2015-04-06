@@ -1,4 +1,4 @@
-#This is a the documetation for the XML TMA for Birkbeck University of London 2014/2015
+#XML TMA Documetation for Birkbeck University of London 2014/2015
 
 ##Includes:
 
@@ -26,4 +26,6 @@ look like:
 	$ wk whatever.pdf
 	
 On UNIX systems, aliases are generally stored at ~/.zshrc or ~/.bashrc depending
-on what type of shell you use.
+on what type of shell you use. You may also wish to simply run the alias command
+directly on your shell if you do not wish to keep permanent changes to your
+system.
