@@ -6,10 +6,8 @@
         xsi:schemaLocation="http://titan.dcs.bbk.ac.uk/~jgomes01/xmlfma juices.xsd"> -->
 
 <juices>
-
   <type id="1">
     <title>Fruit Juices</title>
-    <filename>fruitjuices</filename>
     <juice id="1">
       <name>Mango Tango</name>
       <description>
@@ -112,7 +110,6 @@
 
   <type id="2">
     <title>Berry Juices</title>
-    <filename>berryjuices</filename>
     <juice id="4">
       <name>Lemon Cannon</name>
       <description>
@@ -215,7 +212,6 @@
 
   <type id="3">
     <title>Vegetable Juices</title>
-    <filename>vegetablejuices</filename>
     <juice id="7">
       <name>Satsuma Puma</name>
       <description>
@@ -318,7 +314,6 @@
 
   <type id="4">
     <title>Health Juices</title>
-    <filename>healthjuices</filename>
     <juice id="10">
       <name>Green Apple</name>
       <description>
@@ -421,7 +416,6 @@
 
   <type id="5">
     <title>Slimming Juices</title>
-    <filename>slimmingjuices</filename>
     <juice id="13">
       <name>Mandarin Hammering</name>
       <description>
@@ -521,5 +515,4 @@
       <price>14</price>
     </juice>
   </type>
-
 </juices>

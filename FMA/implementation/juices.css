@@ -1,0 +1,38 @@
+.rightcol.hidden {
+  display: none;
+}
+
+.details-wrap {
+  clear: both;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.details-wrap .detail {
+  float: left;
+  width: 40%;
+}
+
+.details-wrap .detail.small {
+  float: left;
+  width: 20%;
+}
+
+.details-wrap .detail h4 {
+  font-size: 14px;
+}
+
+.details-wrap .detail ul {
+  font-size: 12px;
+  padding-left: 25px;
+}
+
+.productblock h3.juice-title {
+  margin-bottom: 15px;
+}
+
+.juice-title span {
+  float: right;
+  color: #FF7400;
+  margin-right: 10px;
+}
